@@ -1,0 +1,195 @@
+D:\ASPNETMVC\bin\Debug\net10.0\appsettings.Development.json
+D:\ASPNETMVC\bin\Debug\net10.0\appsettings.json
+D:\ASPNETMVC\bin\Debug\net10.0\ASPNETMVC.staticwebassets.runtime.json
+D:\ASPNETMVC\bin\Debug\net10.0\ASPNETMVC.staticwebassets.endpoints.json
+D:\ASPNETMVC\bin\Debug\net10.0\ASPNETMVC.exe
+D:\ASPNETMVC\bin\Debug\net10.0\ASPNETMVC.deps.json
+D:\ASPNETMVC\bin\Debug\net10.0\ASPNETMVC.runtimeconfig.json
+D:\ASPNETMVC\bin\Debug\net10.0\ASPNETMVC.dll
+D:\ASPNETMVC\bin\Debug\net10.0\ASPNETMVC.pdb
+D:\ASPNETMVC\obj\Debug\net10.0\rpswa.dswa.cache.json
+D:\ASPNETMVC\obj\Debug\net10.0\ASPNETMVC.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASPNETMVC\obj\Debug\net10.0\ASPNETMVC.AssemblyInfoInputs.cache
+D:\ASPNETMVC\obj\Debug\net10.0\ASPNETMVC.AssemblyInfo.cs
+D:\ASPNETMVC\obj\Debug\net10.0\ASPNETMVC.csproj.CoreCompileInputs.cache
+D:\ASPNETMVC\obj\Debug\net10.0\ASPNETMVC.MvcApplicationPartsAssemblyInfo.cache
+D:\ASPNETMVC\obj\Debug\net10.0\ASPNETMVC.RazorAssemblyInfo.cache
+D:\ASPNETMVC\obj\Debug\net10.0\ASPNETMVC.RazorAssemblyInfo.cs
+D:\ASPNETMVC\obj\Debug\net10.0\rjimswa.dswa.cache.json
+D:\ASPNETMVC\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+D:\ASPNETMVC\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+D:\ASPNETMVC\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\ASPNETMVC\obj\Debug\net10.0\scopedcss\bundle\ASPNETMVC.styles.css
+D:\ASPNETMVC\obj\Debug\net10.0\scopedcss\projectbundle\ASPNETMVC.bundle.scp.css
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\uvg41hn6br-{0}-b9sayid5wm-b9sayid5wm.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\porvtrx80b-{0}-61n19gt1b8-61n19gt1b8.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\hiqcz9sgyo-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\b4asz24l3c-{0}-bqjiyaj88i-bqjiyaj88i.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\sjfbu65uw3-{0}-c2jlpeoesf-c2jlpeoesf.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\qn32q5gh0i-{0}-erw9l3u2r3-erw9l3u2r3.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\rwg9l0eohk-{0}-aexeepp0ev-aexeepp0ev.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\wv6pc0b2tz-{0}-d7shbmvgxk-d7shbmvgxk.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\9konmx83sw-{0}-ausgxo2sd3-ausgxo2sd3.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\k55001gn6p-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\onqoy8joof-{0}-cosvhxvwiu-cosvhxvwiu.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\69u5xjv990-{0}-ub07r2b239-ub07r2b239.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\6gj5amesuw-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\le3ga45lpu-{0}-b7pk76d08c-b7pk76d08c.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\n14oe9srfy-{0}-fsbi9cje9m-fsbi9cje9m.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\3qy8urnked-{0}-rzd6atqjts-rzd6atqjts.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\wpqhx4swbv-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\l5fcs63pv2-{0}-dxx9fxp4il-dxx9fxp4il.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\my5dsedz2o-{0}-jd9uben2k1-jd9uben2k1.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\m8keejeebc-{0}-khv3u5hwcm-khv3u5hwcm.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\l192w59h0x-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\lkf03wch41-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\83647j005f-{0}-c2oey78nd0-c2oey78nd0.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\anyu1kv14b-{0}-tdbxkamptv-tdbxkamptv.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\zvm7kjht6y-{0}-j5mq2jizvt-j5mq2jizvt.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\sh7e1aqqc1-{0}-06098lyss8-06098lyss8.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\ura06spa8a-{0}-nvvlpmu67g-nvvlpmu67g.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\i52yzmgeu1-{0}-s35ty4nyc5-s35ty4nyc5.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\tg015xayho-{0}-pj5nd1wqec-pj5nd1wqec.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\5mj0notr6o-{0}-46ein0sx1k-46ein0sx1k.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\c7vi7cij8a-{0}-v0zj4ognzu-v0zj4ognzu.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\9eqq8194at-{0}-37tfw0ft22-37tfw0ft22.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\4edchsp7ww-{0}-hrwsygsryq-hrwsygsryq.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\ikvbkwm89q-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\airoq8sm1c-{0}-ft3s53vfgj-ft3s53vfgj.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\zpnclklktx-{0}-6cfz1n2cew-6cfz1n2cew.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\f9pay6fnww-{0}-6pdc2jztkx-6pdc2jztkx.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\bkjkvvotku-{0}-493y06b0oq-493y06b0oq.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\ol9x1ofpbu-{0}-iovd86k7lj-iovd86k7lj.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\ilh6tl5640-{0}-vr1egmr9el-vr1egmr9el.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\hpvgwqncol-{0}-kbrnm935zg-kbrnm935zg.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\0g3gizi86v-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\5yerqoywjx-{0}-y7v9cxd14o-y7v9cxd14o.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\x17p05vwfd-{0}-notf2xhcfb-notf2xhcfb.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\49wdvsf0ie-{0}-h1s4sie4z3-h1s4sie4z3.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\ax60ls3vwp-{0}-63fj8s7r0e-63fj8s7r0e.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\ng5ghn0mi1-{0}-0j3bgjxly4-0j3bgjxly4.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\m3efps2osg-{0}-47otxtyo56-47otxtyo56.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\p7pwl201kk-{0}-4v8eqarkd7-4v8eqarkd7.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\98s3n4kb7g-{0}-356vix0kms-356vix0kms.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\a791qk37o5-{0}-83jwlth58m-83jwlth58m.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\hrts0cmlhj-{0}-mrlpezrjn3-mrlpezrjn3.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\vmap9ynvm7-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\otkrepyb9v-{0}-ag7o75518u-ag7o75518u.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\5k51ycwapa-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\63y6cns7np-{0}-0i3buxo5is-0i3buxo5is.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\coxotstpio-{0}-o1o13a6vjx-o1o13a6vjx.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\mvfco4ant6-{0}-ttgo8qnofa-ttgo8qnofa.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\pr59ya3102-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\mpo6bg8ovy-{0}-muycvpuwrr-muycvpuwrr.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\9ah5ctmxxi-{0}-87fc7y1x7t-87fc7y1x7t.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\gtt9t9tc7z-{0}-mlv21k5csn-mlv21k5csn.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\tqpqoz09cm-{0}-n2778rc1n7-n2778rc1n7.gz
+D:\ASPNETMVC\obj\Debug\net10.0\compressed\pt0b89ajne-{0}-n2778rc1n7-n2778rc1n7.gz
+D:\ASPNETMVC\obj\Debug\net10.0\staticwebassets.build.json
+D:\ASPNETMVC\obj\Debug\net10.0\staticwebassets.build.json.cache
+D:\ASPNETMVC\obj\Debug\net10.0\staticwebassets.development.json
+D:\ASPNETMVC\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+D:\ASPNETMVC\obj\Debug\net10.0\swae.build.ex.cache
+D:\ASPNETMVC\obj\Debug\net10.0\ASPNETMVC.dll
+D:\ASPNETMVC\obj\Debug\net10.0\refint\ASPNETMVC.dll
+D:\ASPNETMVC\obj\Debug\net10.0\ASPNETMVC.pdb
+D:\ASPNETMVC\obj\Debug\net10.0\ASPNETMVC.genruntimeconfig.cache
+D:\ASPNETMVC\obj\Debug\net10.0\ref\ASPNETMVC.dll
+D:\MVC .NET 2\bin\Debug\net10.0\appsettings.Development.json
+D:\MVC .NET 2\bin\Debug\net10.0\appsettings.json
+D:\MVC .NET 2\bin\Debug\net10.0\ASPNETMVC.staticwebassets.endpoints.json
+D:\MVC .NET 2\bin\Debug\net10.0\ASPNETMVC.staticwebassets.runtime.json
+D:\MVC .NET 2\bin\Debug\net10.0\ASPNETMVC.exe
+D:\MVC .NET 2\bin\Debug\net10.0\ASPNETMVC.deps.json
+D:\MVC .NET 2\bin\Debug\net10.0\ASPNETMVC.runtimeconfig.json
+D:\MVC .NET 2\bin\Debug\net10.0\ASPNETMVC.dll
+D:\MVC .NET 2\bin\Debug\net10.0\ASPNETMVC.pdb
+D:\MVC .NET 2\obj\Debug\net10.0\rpswa.dswa.cache.json
+D:\MVC .NET 2\obj\Debug\net10.0\ASPNETMVC.GeneratedMSBuildEditorConfig.editorconfig
+D:\MVC .NET 2\obj\Debug\net10.0\ASPNETMVC.AssemblyInfoInputs.cache
+D:\MVC .NET 2\obj\Debug\net10.0\ASPNETMVC.AssemblyInfo.cs
+D:\MVC .NET 2\obj\Debug\net10.0\ASPNETMVC.csproj.CoreCompileInputs.cache
+D:\MVC .NET 2\obj\Debug\net10.0\ASPNETMVC.MvcApplicationPartsAssemblyInfo.cache
+D:\MVC .NET 2\obj\Debug\net10.0\ASPNETMVC.RazorAssemblyInfo.cache
+D:\MVC .NET 2\obj\Debug\net10.0\ASPNETMVC.RazorAssemblyInfo.cs
+D:\MVC .NET 2\obj\Debug\net10.0\rjimswa.dswa.cache.json
+D:\MVC .NET 2\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+D:\MVC .NET 2\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+D:\MVC .NET 2\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\MVC .NET 2\obj\Debug\net10.0\scopedcss\bundle\ASPNETMVC.styles.css
+D:\MVC .NET 2\obj\Debug\net10.0\scopedcss\projectbundle\ASPNETMVC.bundle.scp.css
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\porvtrx80b-{0}-61n19gt1b8-61n19gt1b8.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\hiqcz9sgyo-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\b4asz24l3c-{0}-bqjiyaj88i-bqjiyaj88i.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\sjfbu65uw3-{0}-c2jlpeoesf-c2jlpeoesf.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\qn32q5gh0i-{0}-erw9l3u2r3-erw9l3u2r3.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\rwg9l0eohk-{0}-aexeepp0ev-aexeepp0ev.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\wv6pc0b2tz-{0}-d7shbmvgxk-d7shbmvgxk.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\9konmx83sw-{0}-ausgxo2sd3-ausgxo2sd3.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\k55001gn6p-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\onqoy8joof-{0}-cosvhxvwiu-cosvhxvwiu.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\69u5xjv990-{0}-ub07r2b239-ub07r2b239.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\6gj5amesuw-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\le3ga45lpu-{0}-b7pk76d08c-b7pk76d08c.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\n14oe9srfy-{0}-fsbi9cje9m-fsbi9cje9m.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\3qy8urnked-{0}-rzd6atqjts-rzd6atqjts.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\wpqhx4swbv-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\l5fcs63pv2-{0}-dxx9fxp4il-dxx9fxp4il.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\my5dsedz2o-{0}-jd9uben2k1-jd9uben2k1.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\m8keejeebc-{0}-khv3u5hwcm-khv3u5hwcm.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\l192w59h0x-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\lkf03wch41-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\83647j005f-{0}-c2oey78nd0-c2oey78nd0.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\anyu1kv14b-{0}-tdbxkamptv-tdbxkamptv.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\zvm7kjht6y-{0}-j5mq2jizvt-j5mq2jizvt.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\sh7e1aqqc1-{0}-06098lyss8-06098lyss8.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\ura06spa8a-{0}-nvvlpmu67g-nvvlpmu67g.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\i52yzmgeu1-{0}-s35ty4nyc5-s35ty4nyc5.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\tg015xayho-{0}-pj5nd1wqec-pj5nd1wqec.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\5mj0notr6o-{0}-46ein0sx1k-46ein0sx1k.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\c7vi7cij8a-{0}-v0zj4ognzu-v0zj4ognzu.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\9eqq8194at-{0}-37tfw0ft22-37tfw0ft22.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\4edchsp7ww-{0}-hrwsygsryq-hrwsygsryq.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\ikvbkwm89q-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\airoq8sm1c-{0}-ft3s53vfgj-ft3s53vfgj.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\zpnclklktx-{0}-6cfz1n2cew-6cfz1n2cew.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\f9pay6fnww-{0}-6pdc2jztkx-6pdc2jztkx.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\bkjkvvotku-{0}-493y06b0oq-493y06b0oq.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\ol9x1ofpbu-{0}-iovd86k7lj-iovd86k7lj.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\ilh6tl5640-{0}-vr1egmr9el-vr1egmr9el.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\hpvgwqncol-{0}-kbrnm935zg-kbrnm935zg.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\0g3gizi86v-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\5yerqoywjx-{0}-y7v9cxd14o-y7v9cxd14o.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\x17p05vwfd-{0}-notf2xhcfb-notf2xhcfb.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\49wdvsf0ie-{0}-h1s4sie4z3-h1s4sie4z3.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\ax60ls3vwp-{0}-63fj8s7r0e-63fj8s7r0e.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\ng5ghn0mi1-{0}-0j3bgjxly4-0j3bgjxly4.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\m3efps2osg-{0}-47otxtyo56-47otxtyo56.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\p7pwl201kk-{0}-4v8eqarkd7-4v8eqarkd7.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\98s3n4kb7g-{0}-356vix0kms-356vix0kms.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\a791qk37o5-{0}-83jwlth58m-83jwlth58m.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\hrts0cmlhj-{0}-mrlpezrjn3-mrlpezrjn3.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\vmap9ynvm7-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\otkrepyb9v-{0}-ag7o75518u-ag7o75518u.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\5k51ycwapa-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\63y6cns7np-{0}-0i3buxo5is-0i3buxo5is.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\coxotstpio-{0}-o1o13a6vjx-o1o13a6vjx.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\mvfco4ant6-{0}-ttgo8qnofa-ttgo8qnofa.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\pr59ya3102-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\mpo6bg8ovy-{0}-muycvpuwrr-muycvpuwrr.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\9ah5ctmxxi-{0}-87fc7y1x7t-87fc7y1x7t.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\gtt9t9tc7z-{0}-mlv21k5csn-mlv21k5csn.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\tqpqoz09cm-{0}-n2778rc1n7-n2778rc1n7.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\pt0b89ajne-{0}-n2778rc1n7-n2778rc1n7.gz
+D:\MVC .NET 2\obj\Debug\net10.0\staticwebassets.build.json
+D:\MVC .NET 2\obj\Debug\net10.0\staticwebassets.build.json.cache
+D:\MVC .NET 2\obj\Debug\net10.0\staticwebassets.development.json
+D:\MVC .NET 2\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+D:\MVC .NET 2\obj\Debug\net10.0\swae.build.ex.cache
+D:\MVC .NET 2\obj\Debug\net10.0\ASPNETMVC.dll
+D:\MVC .NET 2\obj\Debug\net10.0\refint\ASPNETMVC.dll
+D:\MVC .NET 2\obj\Debug\net10.0\ASPNETMVC.pdb
+D:\MVC .NET 2\obj\Debug\net10.0\ASPNETMVC.genruntimeconfig.cache
+D:\MVC .NET 2\obj\Debug\net10.0\ref\ASPNETMVC.dll
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\uvg41hn6br-{0}-c9hue6efd6-c9hue6efd6.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\u8vv8rnpfu-{0}-kjb8chmam3-kjb8chmam3.gz

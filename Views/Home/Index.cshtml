@@ -1,0 +1,201 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<html>
+  <head>
+  <link href="CSS/index.css" rel="stylesheet" type="text/css" />
+  <style>
+    #carouselExampleCaptions {
+        width: 900px;
+        height: 400px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    #carouselExampleCaptions .carousel-item {
+        height: 400px;
+    }
+
+    #carouselExampleCaptions .carousel-item img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    body{
+      background-color: black;
+    }
+    .index-headline {
+      
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      justify-content: space-between;
+      text-align: center;
+      padding: 5px;
+      color: whitesmoke;
+      margin-top: 20px;
+    }
+</style>
+
+  </head>
+  <body>
+<div class="container">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/img1.jpg" class="d-block w-100" alt="img1">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/img2.jpg" class="d-block w-100" alt="img2">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/img3.png" class="d-block w-100" alt="img3">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+<br />
+
+
+
+<div class="index-headline">
+    <h2>
+      Welcome to our webapp choose your food..
+      <br />
+      Web for foodies..🥗
+    </h2>
+</div>
+
+
+
+
+<div class="index-product">
+ <div class="product-heading">
+        <h2>Our Popular Foods</h2>
+        <p>Fresh, delicious and made just for you.</p>
+    </div>
+
+    <div class="product-container">
+
+        <!-- Card 1 -->
+        <div class="food-card">
+            <img src="images/burger.png" alt="Classic Burger">
+
+            <div class="food-card-body">
+                <h3>Classic Burger</h3>
+                <p>Juicy grilled burger with fresh vegetables, cheese and our special sauce.</p>
+
+                <div class="food-card-footer">
+                    <span class="price">₹199</span>
+                    <a href="#" class="order-btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="food-card">
+            <img src="images/Margherita-Pizza.png" alt="Cheese Pizza">
+
+            <div class="food-card-body">
+                <h3>Cheese Pizza</h3>
+                <p>Loaded with mozzarella cheese, tomato sauce and delicious fresh toppings.</p>
+
+                <div class="food-card-footer">
+                    <span class="price">₹299</span>
+                    <a href="#" class="order-btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="food-card">
+            <img src="images/pasta.jpg" alt="Creamy Pasta">
+
+            <div class="food-card-body">
+                <h3>Creamy Pasta</h3>
+                <p>Rich and creamy pasta prepared with herbs, vegetables and special sauce.</p>
+
+                <div class="food-card-footer">
+                    <span class="price">₹249</span>
+                    <a href="#" class="order-btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="food-card">
+            <img src="images/beryani.jpg" alt="Chicken Biryani">
+
+            <div class="food-card-body">
+                <h3>Chicken Biryani</h3>
+                <p>Aromatic basmati rice cooked with tender chicken and traditional spices.</p>
+
+                <div class="food-card-footer">
+                    <span class="price">₹349</span>
+                    <a href="#" class="order-btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="food-card">
+            <img src="images/sandwish.jpg" alt="Club Sandwich">
+
+            <div class="food-card-body">
+                <h3>Club Sandwich</h3>
+                <p>Fresh toasted bread filled with vegetables, cheese and delicious sauces.</p>
+
+                <div class="food-card-footer">
+                    <span class="price">₹179</span>
+                    <a href="#" class="order-btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="food-card">
+            <img src="images/noodles.jpg" alt="Veg Noodles">
+
+            <div class="food-card-body">
+                <h3>Veg Noodles</h3>
+                <p>Stir-fried noodles tossed with fresh vegetables and flavorful Asian sauces.</p>
+
+                <div class="food-card-footer">
+                    <span class="price">₹229</span>
+                    <a href="#" class="order-btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>

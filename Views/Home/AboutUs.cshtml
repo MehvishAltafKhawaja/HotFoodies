@@ -1,0 +1,32 @@
+@{
+
+}
+
+<html>
+    <head>
+       <style>
+          h1{
+            color: bisque;
+            font-size: large;
+            font-weight: bold;
+            border: 2px solid black;
+            padding: 200px;
+            background-color: black;
+          }
+
+          body{
+            background-color: pink;
+          }
+       </style>
+    </head>
+    <body>
+          <h1>
+            Well To About Page of Our First >net Web App.
+          </h1>
+    @{
+      <h1>
+        Welcome : @ViewData["Name"]
+      </h1>
+    }
+    </body>
+</html>
