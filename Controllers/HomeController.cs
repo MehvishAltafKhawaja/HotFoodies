@@ -17,10 +17,32 @@ public class HomeController : Controller
         {
          name = "Ubaid"
         };
-        TempData["Name"] = dt.name;
+        ViewData["Name"] = dt.name;
         return View(dt);
     }
+    public IActionResult Showproduct()
+    {   
+        // For Single Product or data 
+        // Product prd = new Product()
+        // {
+        //      prodid= 1,
+        //      prodname= "Iphone",
+        //      prodprice= 20000,
+        //      prodQty= 10
+        // };
+        // --------------------------------------------
+// For Multi Data we List 
 
+    List<Product> prd = new List<Product>()
+    {
+        new Product(){prodid=1, prodname="Iphone", prodprice=200000, prodQty=20},
+         new Product(){prodid=2, prodname="Cycle", prodprice=20000, prodQty=10},
+          new Product(){prodid=3, prodname="Laptop", prodprice=100000, prodQty=20},
+           new Product(){prodid=4, prodname="LCD", prodprice=60000, prodQty=15},
+    };
+
+       return View(prd);
+    }
     public IActionResult Privacy()
     {
         return View();

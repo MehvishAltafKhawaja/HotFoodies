@@ -1,0 +1,43 @@
+@* This below code of cshtml is for single item *@
+@* @model ASPNETMVC.Models.Product
+
+<div>
+    <h1>Product Detail</h1>
+    <hr />
+    <h3>
+        Prodcut Id : @Model.prodid
+    </h3>
+    <h3>
+        Product Name : @Model.prodname
+    </h3>
+    <h3>
+        Product Price : @Model.prodprice
+    </h3>
+    <h3>
+        Product Qty : @Model.prodQty
+    </h3>
+</div> *@
+
+
+@* Now we add multi item  *@
+
+@model IEnumerable<ASPNETMVC.Models.Product>
+
+<h1>
+    Product Details
+</h1>
+
+<div class="container">
+@{
+
+   foreach(var productitem in Model)
+   {
+    <h3>ProdId: @productitem.prodid</h3>
+    <h3>ProdName: @productitem.prodname</h3>
+    <h3>ProdPrice: @productitem.prodprice</h3>
+    <h3>ProdQty: @productitem.prodQty</h3>
+   }
+  
+}
+ <hr />
+</div>

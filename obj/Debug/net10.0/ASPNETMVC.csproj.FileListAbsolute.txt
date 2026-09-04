@@ -193,3 +193,4 @@ D:\MVC .NET 2\obj\Debug\net10.0\ASPNETMVC.genruntimeconfig.cache
 D:\MVC .NET 2\obj\Debug\net10.0\ref\ASPNETMVC.dll
 D:\MVC .NET 2\obj\Debug\net10.0\compressed\uvg41hn6br-{0}-c9hue6efd6-c9hue6efd6.gz
 D:\MVC .NET 2\obj\Debug\net10.0\compressed\u8vv8rnpfu-{0}-kjb8chmam3-kjb8chmam3.gz
+D:\MVC .NET 2\obj\Debug\net10.0\ASPNETMVC.sourcelink.json
