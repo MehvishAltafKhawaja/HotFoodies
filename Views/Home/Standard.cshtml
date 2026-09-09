@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Standard-HelperClass";
+}
+
+@using(Html.BeginForm("ShowData","Admin"))
+{   <div>
+    @Html.Label("","Username", new { @class ="form-label"})
+    @Html.TextBox("username","",new {@class="form-control"})
+   </div>
+   <br />
+   <div>
+    @Html.Label("","Password",new {@class="form-label"})
+    @Html.Password("password", "", new {@class="form-control"})
+   </div>
+<br />
+   <div class="btn btn-dark text-decoration-none">
+    @Html.ActionLink("Submit","ShowData","Admin")
+    </div>
+}

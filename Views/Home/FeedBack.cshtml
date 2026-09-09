@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "Feedback";
+}
+
+<link rel="stylesheet" href="~/CSS/feedback.css" asp-append-version="true" />
+
+<h1>FeedBack 😎</h1>
+
+<div class="fb-class">
+
+    <div class="form-out">
+
+        <form class="fb-from" name="fr" method="post" asp-action="ShowFeedBackData" asp-controller="Admin">
+
+            <div>
+                <label class="form-label">
+                    Username
+                </label>
+
+                <input type="text"
+                       class="form-control"
+                       placeholder="Enter your name here!" name="username" />
+            </div>
+
+            <div>
+                <label class="form-label">
+                    Message
+                </label>
+
+                <textarea class="ta-fd"
+                          placeholder="Write your feedback here..." name="message"></textarea>
+            </div>
+
+            <button type="submit" class="fb-btn">
+                Submit Feedback
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
