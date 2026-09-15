@@ -1,0 +1,95 @@
+@model ASPNETMVC.Models.CreateProd
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/CSS/CreateProd.css" />
+</head>
+<body>
+   <div class="validation-page">
+
+    <div class="validation-card">
+
+        <div class="validation-title">
+            <h2>Product Validation</h2>
+            <p>Enter your product information below</p>
+        </div>
+
+        <form asp-action="ValidSam"
+              asp-controller="Product"
+              method="post">
+
+            <div class="form-group">
+                <label asp-for="ProdId"></label>
+                <input asp-for="ProdId"
+                       class="form-control"
+                       placeholder="Enter Product ID" />
+                <span asp-validation-for="ProdId"
+                      class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="prodname"></label>
+                <input asp-for="prodname"
+                       class="form-control"
+                       placeholder="Enter Product Name" />
+                <span asp-validation-for="prodname"
+                      class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Expire"></label>
+                <input type="date"
+                       asp-for="Expire"
+                       class="form-control" />
+                <span asp-validation-for="Expire"
+                      class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="email"></label>
+                <input asp-for="email"
+                       class="form-control"
+                       placeholder="Enter Email Address" />
+                <span asp-validation-for="email"
+                      class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Batch"></label>
+                <input asp-for="Batch"
+                       class="form-control"
+                       placeholder="Enter Batch Number" />
+                <span asp-validation-for="Batch"
+                      class="text-danger"></span>
+            </div>
+
+            <div asp-validation-summary="All"
+                 class="text-danger">
+            </div>
+
+            <br />
+
+            <button type="submit" class="validation-btn">
+                Create Product
+            </button>
+
+        </form>
+
+        <a asp-action="Index" class="validation-back">
+            ← Back to List
+        </a>
+
+    </div>
+
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+} 
+</body>
+</html>

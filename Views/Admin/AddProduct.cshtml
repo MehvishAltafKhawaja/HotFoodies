@@ -1,0 +1,64 @@
+
+
+@{
+    List<string> pd = new List<string>{"Mutton", "Fried", "Chicken", "Beef", "Cold", "Italian", "Chinees", "Continantal", "Burger"};
+}
+
+<div class="container">
+   <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12" >
+       @using(Html.BeginForm("ShowProduct", "Product")){
+
+          <div>
+            @Html.Label("nm","Enter Product name", new{@class="form-label"})
+          </div>
+          <div>
+            @Html.TextBox("nm","", new{@class="form-control"})
+          </div>
+
+          <br />
+
+          <div>
+            @Html.Label("pr","Enter Product Price", new{@class="form-label"})
+          </div>
+          <div>
+            @Html.TextBox("pr","", new{@class="form-control"})
+          </div>
+
+          <br />
+
+          <div>
+            @Html.Label("pid","Enter Product PId", new{@class="form-label"})
+          </div>
+          <div>
+            @Html.Password("pid","", new{@class="form-control"})
+          </div>
+
+         <br />
+
+          <div>
+            @Html.Label("pid","Select Category", new{@class="form-label"})
+          </div>
+          <div>
+            @Html.RadioButton("cate","Veg", true,new{id="veg"})Veg
+            @Html.RadioButton("cate","NonVeg", false,new{id="nonveg"})Non-Veg
+            @Html.RadioButton("cate","Both", true,new{id="both"})Both
+          </div>
+
+          <br />
+
+          <div>
+            @Html.Label("pid","Select Product Type", new{@class="form-label"})
+          </div>
+          <div>
+            @Html.DropDownList("ptype", new SelectList(pd), "--Select-Type--")
+          </div>
+
+          <div>
+            <input class="btn btn-info text-white" asp-action="ShowProduct" asp-controller="Product" type="Submit" value="Add"/>
+            <input class="btn btn-danger text-white"  type="reset" value="Clear"/>
+          </div>
+       }
+      </div>
+   </div>
+</div>

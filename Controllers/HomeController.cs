@@ -11,6 +11,7 @@ public class HomeController : Controller
         return View();
     }
     
+    [Route("AboutUs")]
      public IActionResult Aboutus()
     {   
         Data dt = new Data()
@@ -91,6 +92,36 @@ public class HomeController : Controller
      public IActionResult Standard()
     {
         return View();
+    }
+
+
+    [Route("Validation")]
+     public IActionResult Validation()
+    {
+        return View();
+    }
+    
+    [HttpPost]
+     public IActionResult Validation(valid vd)
+    {   if(ModelState.IsValid)
+        {
+            return RedirectToAction("ShowValid", vd);
+        }
+        return View(vd);
+    }
+    
+    public IActionResult ShowValid(valid vd)
+    {
+        return View(vd);
+    }
+    public IActionResult Log()
+    {
+        log lg = new log()
+        {
+            username="ubaid",
+            password="ubaid@123"
+        };
+        return View(lg);
     }
 
 
