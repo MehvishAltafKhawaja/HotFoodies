@@ -1,68 +1,335 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - ASPNETMVC</title>
-    <script type="importmap"></script>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/ASPNETMVC.styles.css" asp-append-version="true" />
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ASPNETMVC</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li>
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutUs">About Me</a>
-                        </li>
-                        <li>
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="FeedBack">Feed-Back</a>
-                        </li>
-                        <li>
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Validation">Validation</a>
-                        </li>
-                        <li>
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="ShowFeedBackData">Feed-Back-Data</a>
-                        </li>
-                        <li>
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Standard">Standerd-Helper</a>
-                        </li>
-                        <li>
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="AddProduct">Add-Product</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Log">Login</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted backgrond-wight">
+    <title>@ViewData["Title"] - Hot Foodies</title>
+
+    <script type="importmap"></script>
+
+    <link rel="stylesheet"
+          href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet"
+          href="~/css/site.css"
+          asp-append-version="true" />
+
+    <link rel="stylesheet"
+          href="~/ASPNETMVC.styles.css"
+          asp-append-version="true" />
+</head>
+
+<body>
+
+    <!-- =====================================
+         HEADER / NAVBAR
+    ====================================== -->
+
+    <header class="main-header">
+
+        <nav class="navbar navbar-expand-lg custom-navbar">
+
+            <div class="container">
+
+                <!-- LOGO -->
+                <a class="navbar-brand custom-brand"
+                   asp-area=""
+                   asp-controller="Home"
+                   asp-action="Index">
+
+                    <span class="brand-icon">P</span>
+
+                    <span>
+                        Hot<span class="brand-green">Foodies</span>
+                    </span>
+
+                </a>
+
+
+                <!-- MOBILE BUTTON -->
+                <button class="navbar-toggler custom-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNavbar"
+                        aria-controls="mainNavbar"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+
+                <!-- NAVIGATION -->
+                <div class="collapse navbar-collapse"
+                     id="mainNavbar">
+
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                        <!-- HOME -->
+                        <li class="nav-item">
+
+                            <a class="nav-link custom-nav-link"
+                               asp-area=""
+                               asp-controller="Home"
+                               asp-action="Index">
+
+                                Home
+
+                            </a>
+
+                        </li>
+
+
+                        <!-- PRODUCT LIST -->
+                        <li class="nav-item">
+
+                            <a class="nav-link custom-nav-link"
+                               asp-area=""
+                               asp-controller="Product"
+                               asp-action="ProductList">
+
+                                Products
+
+                            </a>
+
+                        </li>
+
+
+                        <!-- ABOUT -->
+                        <li class="nav-item">
+
+                            <a class="nav-link custom-nav-link"
+                               asp-area=""
+                               asp-controller="Home"
+                               asp-action="AboutUs">
+
+                                About
+
+                            </a>
+
+                        </li>
+
+
+                        <!-- FEEDBACK -->
+                        <li class="nav-item">
+
+                            <a class="nav-link custom-nav-link"
+                               asp-area=""
+                               asp-controller="Home"
+                               asp-action="FeedBack">
+
+                                Feedback
+
+                            </a>
+
+                        </li>
+
+
+                        <!-- CREATE PRODUCT -->
+                        <li class="nav-item ms-lg-3">
+
+                            <a class="create-product-nav"
+                               asp-area=""
+                               asp-controller="Product"
+                               asp-action="CreateProduct">
+
+                                + Add Product
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================
+         MAIN CONTENT
+    ====================================== -->
+
+    <main role="main" class="main-content">
+
+        @RenderBody()
+
+    </main>
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="main-footer">
+
         <div class="container">
-            &copy; 2026 - ASPNETMVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+
+            <div class="footer-grid">
+
+
+                <!-- COMPANY INFORMATION -->
+                <div class="footer-section">
+
+                    <div class="footer-logo">
+
+                        <span class="brand-icon">P</span>
+
+                        <span>
+                            Product<span>Manager</span>
+                        </span>
+
+                    </div>
+
+                    <p class="footer-description">
+
+                        A simple and efficient product management
+                        system built with ASP.NET Core MVC for
+                        creating, updating, viewing and managing
+                        product records.
+
+                    </p>
+
+                </div>
+
+
+                <!-- QUICK LINKS -->
+                <div class="footer-section">
+
+                    <h4>Quick Links</h4>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a asp-controller="Home"
+                               asp-action="Index">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a asp-controller="Product"
+                               asp-action="ProductList">
+                                Product List
+                            </a>
+                        </li>
+
+                        <li>
+                            <a asp-controller="Home"
+                               asp-action="AboutUs">
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a asp-controller="Home"
+                               asp-action="FeedBack">
+                                Feedback
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- PRODUCT MANAGEMENT -->
+                <div class="footer-section">
+
+                    <h4>Product Management</h4>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a asp-controller="Product"
+                               asp-action="ProductList">
+                                View Products
+                            </a>
+                        </li>
+
+                        <li>
+                            <a asp-controller="Product"
+                               asp-action="CreateProduct">
+                                Add New Product
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- INFORMATION -->
+                <div class="footer-section">
+
+                    <h4>Information</h4>
+
+                    <p class="footer-info">
+                        ASP.NET Core MVC
+                    </p>
+
+                    <p class="footer-info">
+                        Product Management System
+                    </p>
+
+                    <p class="footer-info">
+                        Version 1.0
+                    </p>
+
+                    <a asp-controller="Home"
+                       asp-action="Privacy"
+                       class="privacy-link">
+
+                        Privacy Policy
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- FOOTER BOTTOM -->
+
+            <div class="footer-bottom">
+
+                <p>
+                    © @DateTime.Now.Year ProductManager.
+                    All Rights Reserved.
+                </p>
+
+                <p>
+                    Built with
+                    <span>ASP.NET Core MVC</span>
+                </p>
+
+            </div>
+
         </div>
+
     </footer>
+
+
+    <!-- =====================================
+         SCRIPTS
+    ====================================== -->
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script src="~/js/site.js"
+            asp-append-version="true"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
+
 </body>
+
 </html>

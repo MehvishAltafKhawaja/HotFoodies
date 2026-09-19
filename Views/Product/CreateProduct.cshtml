@@ -1,95 +1,221 @@
-@model ASPNETMVC.Models.CreateProd
+@model ASPNETMVC.Models.ProductTable
+
+@{
+    Layout = null;
+}
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Create Product</title>
+
     <link rel="stylesheet" href="~/CSS/CreateProd.css" />
 </head>
+
 <body>
-   <div class="validation-page">
 
-    <div class="validation-card">
+    <div class="create-page">
 
-        <div class="validation-title">
-            <h2>Product Validation</h2>
-            <p>Enter your product information below</p>
+        <!-- PAGE HEADER -->
+        <div class="page-header">
+
+            <div>
+                <h1>
+                    Create <span>Product</span>
+                </h1>
+
+                <p>
+                    Add a new product record to your product management system.
+                </p>
+            </div>
+
+            <a asp-action="ProductList"
+               asp-controller="Product"
+               class="back-top-btn">
+                ← Back to List
+            </a>
+
         </div>
 
-        <form asp-action="ValidSam"
-              asp-controller="Product"
-              method="post">
 
-            <div class="form-group">
-                <label asp-for="ProdId"></label>
-                <input asp-for="ProdId"
-                       class="form-control"
-                       placeholder="Enter Product ID" />
-                <span asp-validation-for="ProdId"
-                      class="text-danger"></span>
+        <!-- CREATE CARD -->
+        <div class="create-card">
+
+            <!-- CARD HEADER -->
+            <div class="card-header">
+
+                <div class="create-icon">
+                    +
+                </div>
+
+                <div>
+                    <h2>New Product Information</h2>
+
+                    <p>
+                        Enter the product details below to create a new record.
+                    </p>
+                </div>
+
             </div>
 
-            <div class="form-group">
-                <label asp-for="prodname"></label>
-                <input asp-for="prodname"
-                       class="form-control"
-                       placeholder="Enter Product Name" />
-                <span asp-validation-for="prodname"
-                      class="text-danger"></span>
-            </div>
 
-            <div class="form-group">
-                <label asp-for="Expire"></label>
-                <input type="date"
-                       asp-for="Expire"
-                       class="form-control" />
-                <span asp-validation-for="Expire"
-                      class="text-danger"></span>
-            </div>
+            <!-- FORM -->
+            <form asp-action="CreateProduct"
+                  asp-controller="Product"
+                  method="post">
 
-            <div class="form-group">
-                <label asp-for="email"></label>
-                <input asp-for="email"
-                       class="form-control"
-                       placeholder="Enter Email Address" />
-                <span asp-validation-for="email"
-                      class="text-danger"></span>
-            </div>
 
-            <div class="form-group">
-                <label asp-for="Batch"></label>
-                <input asp-for="Batch"
-                       class="form-control"
-                       placeholder="Enter Batch Number" />
-                <span asp-validation-for="Batch"
-                      class="text-danger"></span>
-            </div>
+                <!-- VALIDATION SUMMARY -->
+                <div asp-validation-summary="ModelOnly"
+                     class="validation-summary">
+                </div>
 
-            <div asp-validation-summary="All"
-                 class="text-danger">
-            </div>
 
-            <br />
+                <div class="form-content">
 
-            <button type="submit" class="validation-btn">
-                Create Product
-            </button>
 
-        </form>
+                    <!-- PRODUCT ID -->
+                    <div class="form-group">
 
-        <a asp-action="Index" class="validation-back">
-            ← Back to List
-        </a>
+                        <label asp-for="ProdId"></label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">#</span>
+
+                            <input asp-for="ProdId"
+                                   class="form-control"
+                                   placeholder="Enter Product ID" />
+
+                        </div>
+
+                        <span asp-validation-for="ProdId"
+                              class="validation-message">
+                        </span>
+
+                    </div>
+
+
+                    <!-- PRODUCT NAME -->
+                    <div class="form-group">
+
+                        <label asp-for="ProdName"></label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">P</span>
+
+                            <input asp-for="ProdName"
+                                   class="form-control"
+                                   placeholder="Enter Product Name" />
+
+                        </div>
+
+                        <span asp-validation-for="ProdName"
+                              class="validation-message">
+                        </span>
+
+                    </div>
+
+
+                    <!-- EXPIRY DATE -->
+                    <div class="form-group">
+
+                        <label asp-for="ProdExpire"></label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">◷</span>
+
+                            <input type="date"
+                                   asp-for="ProdExpire"
+                                   class="form-control" />
+
+                        </div>
+
+                        <span asp-validation-for="ProdExpire"
+                              class="validation-message">
+                        </span>
+
+                    </div>
+
+
+                    <!-- PRODUCT PRICE -->
+                    <div class="form-group">
+
+                        <label asp-for="ProdPrice"></label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">₹</span>
+
+                            <input asp-for="ProdPrice"
+                                   class="form-control"
+                                   placeholder="Enter Product Price" />
+
+                        </div>
+
+                        <span asp-validation-for="ProdPrice"
+                              class="validation-message">
+                        </span>
+
+                    </div>
+
+
+                    <!-- BATCH ID -->
+                    <div class="form-group full-width">
+
+                        <label asp-for="ProdBatchId"></label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">B</span>
+
+                            <input asp-for="ProdBatchId"
+                                   class="form-control"
+                                   placeholder="Enter Batch Number" />
+
+                        </div>
+
+                        <span asp-validation-for="ProdBatchId"
+                              class="validation-message">
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ACTION BUTTONS -->
+                <div class="form-actions">
+
+                    <a asp-action="ProductList"
+                       asp-controller="Product"
+                       class="cancel-btn">
+                        Cancel
+                    </a>
+
+                    <button type="submit"
+                            class="create-btn">
+                        + Create Product
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
 
     </div>
 
-</div>
 
-@section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-} 
+    <!-- VALIDATION SCRIPTS -->
+    <partial name="_ValidationScriptsPartial" />
+
 </body>
+
 </html>

@@ -1,32 +1,407 @@
 @{
-
+    ViewData["Title"] = "About Us";
 }
 
-<html>
-    <head>
-       <style>
-          h1{
-            color: bisque;
-            font-size: large;
-            font-weight: bold;
-            border: 2px solid black;
-            padding: 200px;
-            background-color: black;
-          }
+<link rel="stylesheet" href="~/CSS/AboutUs.css" />
 
-          body{
-            background-color: pink;
-          }
-       </style>
-    </head>
-    <body>
-          <h1>
-            Well To About Page of Our First >net Web App.
-          </h1>
-    @{
-      <h1>
-        Welcome : @ViewData["Name"]
-      </h1>
-    }
-    </body>
-</html>
+
+<!-- ==========================================
+     ABOUT HERO
+========================================== -->
+
+<section class="about-hero">
+
+    <div class="about-hero-content">
+
+        <span class="about-tag">
+            HOT FOODIES • KASHMIR
+        </span>
+
+        <h1>
+            Where Great Food Meets
+            <span>Kashmiri Hospitality</span>
+        </h1>
+
+        <p>
+            Welcome to Hot Foodies — a place where delicious food,
+            fresh ingredients and warm hospitality come together
+            to create a memorable dining experience.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a asp-controller="Home"
+               asp-action="Index"
+               class="primary-btn">
+                Explore Our Food →
+            </a>
+
+            <a href="#our-story"
+               class="secondary-btn">
+                Our Story
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     OUR STORY
+========================================== -->
+
+<section class="about-section"
+         id="our-story">
+
+    <div class="about-container">
+
+        <div class="story-content">
+
+            <span class="section-tag">
+                OUR STORY
+            </span>
+
+            <h2>
+                Welcome to
+                <span>Hot Foodies</span>
+            </h2>
+
+            <p>
+                Hot Foodies is a restaurant based in the beautiful
+                valley of Kashmir, created with a simple vision:
+                to serve delicious food that brings people together.
+            </p>
+
+            <p>
+                We believe that good food is more than just a meal.
+                It is about taste, quality, hospitality and the
+                moments shared with family and friends.
+            </p>
+
+            <p>
+                From delicious burgers and cheesy pizzas to aromatic
+                biryani, creamy pasta, sandwiches and noodles, our
+                menu offers something for every food lover.
+            </p>
+
+            <div class="story-highlight">
+
+                <span>“</span>
+
+                <p>
+                    Fresh ingredients, delicious flavours and warm
+                    Kashmiri hospitality — that's the Hot Foodies
+                    experience.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE CARD -->
+
+        <div class="about-info-card">
+
+            <div class="info-card-icon">
+                HF
+            </div>
+
+            <h3>Hot Foodies</h3>
+
+            <p class="restaurant-type">
+                Restaurant • Kashmir
+            </p>
+
+            <div class="info-line"></div>
+
+            <div class="restaurant-detail">
+
+                <span class="detail-icon">✓</span>
+
+                <div>
+                    <strong>Fresh Food</strong>
+                    <p>Prepared with quality ingredients.</p>
+                </div>
+
+            </div>
+
+            <div class="restaurant-detail">
+
+                <span class="detail-icon">★</span>
+
+                <div>
+                    <strong>Quality Taste</strong>
+                    <p>Flavours created for food lovers.</p>
+                </div>
+
+            </div>
+
+            <div class="restaurant-detail">
+
+                <span class="detail-icon">♥</span>
+
+                <div>
+                    <strong>Made With Care</strong>
+                    <p>Every meal is prepared with attention.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     WHY CHOOSE US
+========================================== -->
+
+<section class="why-section">
+
+    <div class="section-heading">
+
+        <span class="section-tag">
+            WHY HOT FOODIES?
+        </span>
+
+        <h2>
+            Food You Can
+            <span>Enjoy & Trust</span>
+        </h2>
+
+        <p>
+            Our focus is simple — good food, quality ingredients
+            and a great experience for every customer.
+        </p>
+
+    </div>
+
+
+    <div class="why-container">
+
+
+        <!-- CARD 1 -->
+        <div class="why-card">
+
+            <div class="why-icon">
+                ✓
+            </div>
+
+            <h3>Fresh Ingredients</h3>
+
+            <p>
+                We focus on fresh and quality ingredients
+                to deliver better flavour in every meal.
+            </p>
+
+        </div>
+
+
+        <!-- CARD 2 -->
+        <div class="why-card">
+
+            <div class="why-icon">
+                ★
+            </div>
+
+            <h3>Delicious Taste</h3>
+
+            <p>
+                Our menu combines popular favourites with
+                flavours designed to satisfy every foodie.
+            </p>
+
+        </div>
+
+
+        <!-- CARD 3 -->
+        <div class="why-card">
+
+            <div class="why-icon">
+                ₹
+            </div>
+
+            <h3>Great Value</h3>
+
+            <p>
+                Enjoy delicious food and generous portions
+                at prices designed to offer great value.
+            </p>
+
+        </div>
+
+
+        <!-- CARD 4 -->
+        <div class="why-card">
+
+            <div class="why-icon">
+                ♥
+            </div>
+
+            <h3>Warm Hospitality</h3>
+
+            <p>
+                Inspired by Kashmir's tradition of hospitality,
+                we want every guest to feel welcome.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     OUR MENU
+========================================== -->
+
+<section class="menu-info-section">
+
+    <div class="menu-info-content">
+
+        <span class="section-tag">
+            SOMETHING FOR EVERYONE
+        </span>
+
+        <h2>
+            Flavours For Every
+            <span>Food Lover</span>
+        </h2>
+
+        <p>
+            Whether you are craving a juicy burger, cheesy pizza,
+            aromatic biryani, creamy pasta or a quick snack,
+            Hot Foodies has something delicious waiting for you.
+        </p>
+
+
+        <div class="food-tags">
+
+            <span>Burgers</span>
+
+            <span>Pizza</span>
+
+            <span>Biryani</span>
+
+            <span>Pasta</span>
+
+            <span>Sandwiches</span>
+
+            <span>Noodles</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     MISSION & VISION
+========================================== -->
+
+<section class="mission-section">
+
+    <div class="mission-container">
+
+
+        <!-- MISSION -->
+
+        <div class="mission-card">
+
+            <span class="mission-number">
+                01
+            </span>
+
+            <h3>Our Mission</h3>
+
+            <p>
+                To serve delicious, fresh and quality food while
+                providing our customers with a welcoming and
+                enjoyable dining experience.
+            </p>
+
+        </div>
+
+
+        <!-- VISION -->
+
+        <div class="mission-card">
+
+            <span class="mission-number">
+                02
+            </span>
+
+            <h3>Our Vision</h3>
+
+            <p>
+                To make Hot Foodies a trusted and loved food
+                destination in Kashmir where people can enjoy
+                great food and create memorable moments.
+            </p>
+
+        </div>
+
+
+        <!-- PROMISE -->
+
+        <div class="mission-card">
+
+            <span class="mission-number">
+                03
+            </span>
+
+            <h3>Our Promise</h3>
+
+            <p>
+                To continuously focus on food quality, cleanliness,
+                customer satisfaction and flavours our customers
+                love.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     CALL TO ACTION
+========================================== -->
+
+<section class="about-cta">
+
+    <div class="cta-content">
+
+        <span class="section-tag">
+            READY TO EAT?
+        </span>
+
+        <h2>
+            Hungry? Your Favourite Food
+            <span>Is Waiting.</span>
+        </h2>
+
+        <p>
+            Explore Hot Foodies and discover delicious meals
+            made for food lovers.
+        </p>
+
+        <a asp-controller="Home"
+           asp-action="Index"
+           class="primary-btn">
+
+            Explore Our Food →
+
+        </a>
+
+    </div>
+
+</section>

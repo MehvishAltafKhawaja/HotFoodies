@@ -1,4 +1,4 @@
-@model IEnumerable<ASPNETMVC.Models.CreateProd>
+@model IEnumerable<ASPNETMVC.Models.ProductTable>
 
 @{
     Layout = null;
@@ -8,54 +8,178 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>ProductList</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List</title>
+
+    <link rel="stylesheet"
+          href="~/CSS/ProductList.css"
+          asp-append-version="true" />
 </head>
+
+
+ 
 <body>
-<p>
-    <a asp-action="CreateProduct">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.ProdId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.prodname)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Batch)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.ProdId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.prodname)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Batch)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
+
+    <div class="product-page">
+        @{
+          @if (TempData["ErrorMessage"] != null)
+{
+    <div class="custom-alert error-alert" id="errorAlert">
+        <div class="alert-icon">!</div>
+
+        <div class="alert-content">
+            <strong>Error</strong>
+            <span>@TempData["ErrorMessage"]</span>
+        </div>
+
+        <button type="button"
+                class="alert-close"
+                onclick="document.getElementById('errorAlert').style.display='none'">
+            &times;
+        </button>
+    </div>
 }
-    </tbody>
-</table>
+@if (TempData["Success"] != null)
+{
+    <div class="custom-alert success-alert" id="successAlert">
+        
+        <div class="alert-icon">✓</div>
+
+        <div class="alert-content">
+            <strong>Success</strong>
+            <span>@TempData["Success"]</span>
+        </div>
+
+        <button type="button"
+                class="alert-close"
+                onclick="document.getElementById('successAlert').style.display='none'">
+            &times;
+        </button>
+
+    </div>
+}
+
+        <div class="page-heading">
+
+            <div>
+                <h1>Product <span>Management</span></h1>
+                <p>View and manage your product records easily.</p>
+            </div>
+
+            <a asp-action="CreateProduct" class="create-btn">
+                + Create New
+            </a>
+
+        </div>
+
+
+        <div class="table-container">
+
+            <table class="table">
+
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.ProdId)
+                        </th>
+
+                        <th>
+                            @Html.DisplayNameFor(model => model.ProdName)
+                        </th>
+
+                        <th>
+                            @Html.DisplayNameFor(model => model.ProdExpire)
+                        </th>
+
+                        <th>
+                            @Html.DisplayNameFor(model => model.ProdPrice)
+                        </th>
+
+                        <th>
+                            @Html.DisplayNameFor(model => model.ProdBatchId)
+                        </th>
+
+                        <th>
+                            Actions
+                        </th>
+                    </tr>
+                </thead>
+
+
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+
+                            <td>
+                                <span class="product-id">
+                                    @Html.DisplayFor(modelItem => item.ProdId)
+                                </span>
+                            </td>
+
+                            <td class="product-name">
+                                @Html.DisplayFor(modelItem => item.ProdName)
+                            </td>
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ProdExpire)
+                            </td>
+
+                            <td class="email">
+                                @Html.DisplayFor(modelItem => item.ProdPrice)
+                            </td>
+
+                            <td>
+                                <span class="batch">
+                                    @Html.DisplayFor(modelItem => item.ProdBatchId)
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <div class="action-buttons">
+
+                                    @Html.ActionLink(
+                                        "✎ Edit",
+                                        "Update",
+                                        new { id = item.ProdId },
+                                        new { @class = "btn edit-btn" }
+                                    )
+
+                                    @Html.ActionLink(
+                                        "ⓘ Details",
+                                        "Details",
+                                        new { id = item.ProdId },
+                                        new { @class = "btn details-btn" }
+                                    )
+
+                                    @Html.ActionLink(
+                                        "🗑 Delete",
+                                        "Delete",
+                                        new { id = item.ProdId },
+                                        new { @class = "btn delete-btn" }
+                                    )
+                                  
+                                </div>
+
+                            </td>
+
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div class="table-footer">
+            Total Products: <strong>@Model.Count()</strong>
+        </div>
+}
+    </div>
+
 </body>
+
 </html>

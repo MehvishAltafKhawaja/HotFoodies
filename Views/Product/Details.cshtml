@@ -1,5 +1,4 @@
-
-@model ASPNETMVC.Models.CreateProd
+@model ASPNETMVC.Models.ProductTable
 
 @{
     Layout = null;
@@ -21,84 +20,133 @@
 
     <div class="details-page">
 
+        <!-- PAGE HEADER -->
+        <div class="page-header">
+
+            <div>
+                <h1>
+                    Product <span>Details</span>
+                </h1>
+
+                <p>
+                    View complete information about the selected product.
+                </p>
+            </div>
+
+            <a asp-action="ProductList"
+               class="back-top-btn">
+                ← Back to List
+            </a>
+
+        </div>
+
+
+        <!-- DETAILS CARD -->
         <div class="details-card">
 
+            <!-- CARD HEADER -->
             <div class="details-header">
+
                 <div class="details-icon">
                     📦
                 </div>
 
                 <div>
-                    <h1>Product Details</h1>
-                    <p>View product information</p>
+                    <h2>Product Information</h2>
+                    <p>Complete details of this product record.</p>
                 </div>
+
             </div>
 
+
+            <!-- PRODUCT DETAILS -->
             <div class="details-content">
 
+
+                <!-- PRODUCT ID -->
                 <div class="detail-item">
+
                     <span class="detail-label">
                         Product ID
                     </span>
 
-                    <span class="detail-value">
+                    <span class="product-id">
                         @Html.DisplayFor(model => model.ProdId)
                     </span>
+
                 </div>
 
+
+                <!-- PRODUCT NAME -->
                 <div class="detail-item">
+
                     <span class="detail-label">
                         Product Name
                     </span>
 
-                    <span class="detail-value">
-                        @Html.DisplayFor(model => model.prodname)
+                    <span class="detail-value product-name">
+                        @Html.DisplayFor(model => model.ProdName)
                     </span>
+
                 </div>
 
+
+                <!-- EXPIRY DATE -->
                 <div class="detail-item">
+
                     <span class="detail-label">
                         Expiry Date
                     </span>
 
                     <span class="detail-value">
-                        @Html.DisplayFor(model => model.Expire)
+                        @Html.DisplayFor(model => model.ProdExpire)
                     </span>
+
                 </div>
 
+
+                <!-- PRODUCT PRICE -->
                 <div class="detail-item">
+
                     <span class="detail-label">
-                        Email
+                        Product Price
                     </span>
 
-                    <span class="detail-value">
-                        @Html.DisplayFor(model => model.email)
+                    <span class="product-price">
+                        ₹ @Html.DisplayFor(model => model.ProdPrice)
                     </span>
+
                 </div>
 
+
+                <!-- BATCH ID -->
                 <div class="detail-item">
+
                     <span class="detail-label">
-                        Batch Number
+                        Batch ID
                     </span>
 
-                    <span class="detail-value">
-                        @Html.DisplayFor(model => model.Batch)
+                    <span class="batch-badge">
+                        @Html.DisplayFor(model => model.ProdBatchId)
                     </span>
+
                 </div>
 
             </div>
 
-            <div class="details-actions">
 
-                <a asp-action="Edit"
-                   asp-route-id="@Model.ProdId"
-                   class="edit-btn">
-                    ✏ Edit
-                </a>
+            <!-- ACTION BUTTONS -->
+            <div class="details-actions">
 
                 <a asp-action="ProductList"
                    class="back-btn">
                     ← Back to List
+                </a>
+
+                <a asp-action="Update"
+                   asp-route-id="@Model.ProdId"
+                   class="edit-btn">
+                    ✎ Edit Product
                 </a>
 
             </div>
@@ -108,5 +156,5 @@
     </div>
 
 </body>
-</html>
 
+</html>

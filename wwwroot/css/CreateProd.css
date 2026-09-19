@@ -1,195 +1,536 @@
-/* ==============================
-   Validation Form - Dark Theme
-   ============================== */
+/* ==========================================
+   BASIC PAGE SETTINGS
+========================================== */
 
-.validation-page {
-    min-height: calc(100vh - 80px);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(0, 255, 153, 0.09),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at bottom left,
+            rgba(0, 255, 153, 0.06),
+            transparent 35%
+        ),
+        #05080d;
+
+    color: whitesmoke;
+}
+
+
+/* ==========================================
+   MAIN PAGE
+========================================== */
+
+.create-page {
+    width: 90%;
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 55px 20px;
+}
+
+
+/* ==========================================
+   PAGE HEADER
+========================================== */
+
+.page-header {
     display: flex;
-    justify-content: center;
+
+    justify-content: space-between;
     align-items: center;
-    padding: 40px 15px;
-    background: #000;
-    color: whitesmoke;
+
+    margin-bottom: 40px;
 }
 
-.validation-card {
-    width: 100%;
-    max-width: 650px;
-    padding: 35px;
-    background: #111;
-    border: 1px solid #2d2d2d;
-    border-radius: 18px;
-    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.7);
+.page-header h1 {
+    font-size: 46px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
 }
 
-.validation-title {
-    text-align: center;
-    margin-bottom: 30px;
+.page-header h1 span {
+    color: #00d084;
 }
 
-.validation-title h2 {
-    color: whitesmoke;
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 8px;
-}
+.page-header p {
+    color: #9fb3c8;
 
-.validation-title p {
-    color: #aaa;
-    font-size: 14px;
-}
+    font-size: 17px;
 
-/* Form groups */
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    color: whitesmoke;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-/* Input fields */
-
-.validation-card .form-control {
-    width: 100%;
-    height: 48px;
-    padding: 10px 14px;
-    background: #1b1b1b;
-    color: whitesmoke;
-    border: 1px solid #3a3a3a;
-    border-radius: 10px;
-    outline: none;
-    transition: all 0.3s ease;
-}
-
-.validation-card .form-control::placeholder {
-    color: #777;
-}
-
-.validation-card .form-control:focus {
-    background: #151515;
-    color: whitesmoke;
-    border-color: #00bfff;
-    box-shadow: 0 0 0 3px rgba(0, 191, 255, 0.12);
-}
-
-/* Date input */
-
-.validation-card input[type="date"] {
-    color-scheme: dark;
-}
-
-/* Validation messages */
-
-.text-danger {
-    color: #ff6b6b !important;
-}
-
-.validation-card .field-validation-error {
-    display: block;
-    margin-top: 5px;
-    font-size: 13px;
-}
-
-/* Validation summary */
-
-.validation-summary-errors {
-    background: rgba(255, 50, 50, 0.08);
-    border: 1px solid rgba(255, 80, 80, 0.4);
-    border-radius: 10px;
-    padding: 12px 15px;
     margin-top: 10px;
 }
 
-.validation-summary-errors ul {
-    margin: 0;
-    padding-left: 20px;
-}
 
-/* Submit button */
+/* ==========================================
+   TOP BACK BUTTON
+========================================== */
 
-.validation-btn {
-    width: 100%;
-    height: 50px;
-    border: none;
-    border-radius: 10px;
-    background: linear-gradient(135deg, #00bfff, #0066ff);
-    color: white;
-    font-size: 16px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.validation-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 140, 255, 0.35);
-}
-
-.validation-btn:active {
-    transform: translateY(0);
-}
-
-/* Back link */
-
-.validation-back {
-    display: inline-block;
-    margin-top: 20px;
-    color: #00bfff;
+.back-top-btn {
     text-decoration: none;
-    font-weight: 600;
+
+    color: white;
+
+    padding: 15px 24px;
+
+    border-radius: 11px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #008e5a,
+            #00d084
+        );
+
+    border: 1px solid #00e895;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    box-shadow:
+        0 0 20px rgba(0, 208, 132, 0.25);
+
     transition: 0.3s;
 }
 
-.validation-back:hover {
-    color: white;
-    text-decoration: none;
+.back-top-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 28px rgba(0, 208, 132, 0.45);
 }
 
-/* ==============================
-   Responsive Design
-   ============================== */
 
-@media (max-width: 768px) {
+/* ==========================================
+   CREATE CARD
+========================================== */
 
-    .validation-page {
-        padding: 25px 15px;
+.create-card {
+    max-width: 1000px;
+
+    margin: auto;
+
+    background: #0d141d;
+
+    border: 1px solid #253241;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.45),
+        0 0 30px rgba(0, 208, 132, 0.04);
+}
+
+
+/* ==========================================
+   CARD HEADER
+========================================== */
+
+.card-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 28px 35px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 208, 132, 0.09),
+            rgba(0, 208, 132, 0.02)
+        );
+
+    border-bottom: 1px solid #253241;
+}
+
+
+/* ==========================================
+   CREATE ICON
+========================================== */
+
+.create-icon {
+    width: 55px;
+    height: 55px;
+
+    min-width: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 208, 132, 0.12);
+
+    border: 1px solid #00d084;
+
+    border-radius: 12px;
+
+    color: #00e895;
+
+    font-size: 34px;
+    font-weight: 400;
+
+    box-shadow:
+        0 0 18px rgba(0, 208, 132, 0.12);
+}
+
+.card-header h2 {
+    color: white;
+
+    font-size: 23px;
+
+    margin-bottom: 6px;
+}
+
+.card-header p {
+    color: #8fa2b5;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   FORM CONTENT
+========================================== */
+
+.form-content {
+    padding: 35px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 30px;
+    row-gap: 27px;
+}
+
+
+/* ==========================================
+   FORM GROUP
+========================================== */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* ==========================================
+   LABEL
+========================================== */
+
+.form-group label {
+    margin-bottom: 10px;
+
+    color: #c7d2df;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* ==========================================
+   INPUT WRAPPER
+========================================== */
+
+.input-wrapper {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* ==========================================
+   INPUT ICON
+========================================== */
+
+.input-icon {
+    position: absolute;
+
+    left: 17px;
+
+    z-index: 2;
+
+    color: #00d084;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    pointer-events: none;
+}
+
+
+/* ==========================================
+   INPUT FIELDS
+========================================== */
+
+.form-control {
+    width: 100%;
+    height: 54px;
+
+    padding: 0 17px 0 48px;
+
+    border-radius: 10px;
+
+    border: 1px solid #2c3b49;
+
+    outline: none;
+
+    background: #080e15;
+
+    color: #eaf1f8;
+
+    font-size: 16px;
+
+    transition: 0.25s;
+}
+
+.form-control::placeholder {
+    color: #536475;
+}
+
+
+/* ==========================================
+   INPUT FOCUS
+========================================== */
+
+.form-control:focus {
+    border-color: #00d084;
+
+    background: #091119;
+
+    box-shadow:
+        0 0 0 3px rgba(0, 208, 132, 0.08),
+        0 0 16px rgba(0, 208, 132, 0.08);
+}
+
+
+/* ==========================================
+   DATE FIELD
+========================================== */
+
+input[type="date"] {
+    color-scheme: dark;
+}
+
+
+/* ==========================================
+   VALIDATION
+========================================== */
+
+.validation-message {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #ff5361;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* Validation Summary */
+
+.validation-summary {
+    margin: 25px 35px 0;
+
+    color: #ff5361;
+
+    background: rgba(255, 48, 64, 0.08);
+
+    border-left: 4px solid #ef3340;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+}
+
+.validation-summary:empty {
+    display: none;
+}
+
+.validation-summary ul {
+    padding: 15px 20px 15px 35px;
+}
+
+
+/* ==========================================
+   ACTION SECTION
+========================================== */
+
+.form-actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 15px;
+
+    padding: 24px 35px;
+
+    background: #090f16;
+
+    border-top: 1px solid #25313d;
+}
+
+
+/* ==========================================
+   CREATE BUTTON
+========================================== */
+
+.create-btn {
+    border: none;
+
+    cursor: pointer;
+
+    padding: 14px 27px;
+
+    border-radius: 9px;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    background:
+        linear-gradient(
+            135deg,
+            #00a969,
+            #00df8b
+        );
+
+    border: 1px solid #00ef96;
+
+    box-shadow:
+        0 0 18px rgba(0, 208, 132, 0.25);
+
+    transition: 0.25s;
+}
+
+.create-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 27px rgba(0, 208, 132, 0.45);
+}
+
+
+/* ==========================================
+   CANCEL BUTTON
+========================================== */
+
+.cancel-btn {
+    text-decoration: none;
+
+    padding: 14px 27px;
+
+    border-radius: 9px;
+
+    background: #17212c;
+
+    color: #d7e0e9;
+
+    border: 1px solid #354657;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    transition: 0.25s;
+}
+
+.cancel-btn:hover {
+    background: #22303d;
+
+    border-color: #526578;
+
+    color: white;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 750px) {
+
+    .create-page {
+        width: 95%;
+
+        padding: 30px 10px;
     }
 
-    .validation-card {
+    .page-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+    .page-header h1 {
+        font-size: 34px;
+    }
+
+    .card-header {
         padding: 25px 20px;
     }
 
-    .validation-title h2 {
-        font-size: 26px;
-    }
-}
+    .form-content {
+        grid-template-columns: 1fr;
 
-@media (max-width: 480px) {
-
-    .validation-page {
-        padding: 20px 10px;
+        padding: 25px 20px;
     }
 
-    .validation-card {
-        padding: 22px 16px;
-        border-radius: 14px;
+    .full-width {
+        grid-column: auto;
     }
 
-    .validation-title h2 {
-        font-size: 23px;
+    .form-actions {
+        padding: 20px;
+
+        flex-direction: column-reverse;
     }
 
-    .validation-card .form-control {
-        height: 46px;
-    }
+    .create-btn,
+    .cancel-btn {
+        width: 100%;
 
-    .validation-btn {
-        height: 48px;
+        text-align: center;
     }
 }

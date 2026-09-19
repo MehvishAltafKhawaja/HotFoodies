@@ -1,0 +1,556 @@
+/* ==========================================
+   BASIC PAGE SETTINGS
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(0, 255, 153, 0.09),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at bottom left,
+            rgba(0, 255, 153, 0.06),
+            transparent 35%
+        ),
+        #05080d;
+
+    color: whitesmoke;
+}
+
+
+/* ==========================================
+   MAIN PAGE
+========================================== */
+
+.update-page {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 55px 20px;
+}
+
+
+/* ==========================================
+   PAGE HEADER
+========================================== */
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 46px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.page-header h1 span {
+    color: #00d084;
+}
+
+.page-header p {
+    color: #9fb3c8;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+
+/* ==========================================
+   TOP BACK BUTTON
+========================================== */
+
+.back-top-btn {
+    text-decoration: none;
+
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #008e5a,
+        #00d084
+    );
+
+    padding: 15px 24px;
+
+    border-radius: 11px;
+
+    border: 1px solid #00e895;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    box-shadow:
+        0 0 20px rgba(0, 208, 132, 0.25);
+
+    transition: 0.3s;
+}
+
+.back-top-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 28px rgba(0, 208, 132, 0.45);
+}
+
+
+/* ==========================================
+   UPDATE CARD
+========================================== */
+
+.update-card {
+    max-width: 1000px;
+
+    margin: auto;
+
+    background: #0d141d;
+
+    border: 1px solid #253241;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.45),
+        0 0 30px rgba(0, 208, 132, 0.04);
+}
+
+
+/* ==========================================
+   CARD HEADER
+========================================== */
+
+.card-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 28px 35px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 208, 132, 0.09),
+            rgba(0, 208, 132, 0.02)
+        );
+
+    border-bottom: 1px solid #253241;
+}
+
+
+/* ==========================================
+   EDIT ICON
+========================================== */
+
+.edit-icon {
+    width: 55px;
+    height: 55px;
+
+    min-width: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: rgba(0, 208, 132, 0.12);
+
+    border: 1px solid #00d084;
+
+    border-radius: 12px;
+
+    color: #00e895;
+
+    font-size: 27px;
+
+    box-shadow:
+        0 0 18px rgba(0, 208, 132, 0.12);
+}
+
+.card-header h2 {
+    color: white;
+
+    font-size: 23px;
+
+    margin-bottom: 6px;
+}
+
+.card-header p {
+    color: #8fa2b5;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   FORM
+========================================== */
+
+.form-content {
+    padding: 35px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 30px;
+
+    row-gap: 27px;
+}
+
+
+/* ==========================================
+   FORM GROUP
+========================================== */
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* ==========================================
+   LABEL
+========================================== */
+
+.form-group label {
+    margin-bottom: 10px;
+
+    color: #c7d2df;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* ==========================================
+   INPUT WRAPPER
+========================================== */
+
+.input-wrapper {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* ==========================================
+   INPUT ICON
+========================================== */
+
+.input-icon {
+    position: absolute;
+
+    left: 17px;
+
+    z-index: 2;
+
+    color: #00d084;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    pointer-events: none;
+}
+
+
+/* ==========================================
+   INPUT
+========================================== */
+
+.form-control {
+    width: 100%;
+
+    height: 54px;
+
+    padding: 0 17px 0 48px;
+
+    border-radius: 10px;
+
+    border: 1px solid #2c3b49;
+
+    outline: none;
+
+    background: #080e15;
+
+    color: #eaf1f8;
+
+    font-size: 16px;
+
+    transition: 0.25s;
+}
+
+.form-control::placeholder {
+    color: #536475;
+}
+
+
+/* ==========================================
+   INPUT FOCUS
+========================================== */
+
+.form-control:focus {
+    border-color: #00d084;
+
+    background: #091119;
+
+    box-shadow:
+        0 0 0 3px rgba(0, 208, 132, 0.08),
+        0 0 16px rgba(0, 208, 132, 0.08);
+}
+
+
+/* ==========================================
+   READONLY PRODUCT ID
+========================================== */
+
+.form-control[readonly] {
+    background: #101821;
+
+    color: #8395a7;
+
+    cursor: not-allowed;
+
+    border-color: #273643;
+}
+
+
+/* ==========================================
+   DATE ICON COLOR
+========================================== */
+
+input[type="date"] {
+    color-scheme: dark;
+}
+
+
+/* ==========================================
+   SMALL TEXT
+========================================== */
+
+.form-group small {
+    margin-top: 7px;
+
+    color: #647789;
+
+    font-size: 12px;
+}
+
+
+/* ==========================================
+   VALIDATION MESSAGE
+========================================== */
+
+.validation-message {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #ff5361;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   VALIDATION SUMMARY
+========================================== */
+
+.validation-summary {
+    margin: 25px 35px 0;
+
+    color: #ff5361;
+
+    background: rgba(255, 48, 64, 0.08);
+
+    border-left: 4px solid #ef3340;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+}
+
+.validation-summary ul {
+    padding: 15px 20px 15px 35px;
+}
+
+
+/* ==========================================
+   ACTION SECTION
+========================================== */
+
+.form-actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 15px;
+
+    padding: 24px 35px;
+
+    background: #090f16;
+
+    border-top: 1px solid #25313d;
+}
+
+
+/* ==========================================
+   UPDATE BUTTON
+========================================== */
+
+.update-btn {
+    border: none;
+
+    cursor: pointer;
+
+    padding: 14px 27px;
+
+    border-radius: 9px;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    background:
+        linear-gradient(
+            135deg,
+            #00a969,
+            #00df8b
+        );
+
+    border: 1px solid #00ef96;
+
+    box-shadow:
+        0 0 18px rgba(0, 208, 132, 0.25);
+
+    transition: 0.25s;
+}
+
+.update-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 26px rgba(0, 208, 132, 0.45);
+}
+
+
+/* ==========================================
+   CANCEL BUTTON
+========================================== */
+
+.cancel-btn {
+    text-decoration: none;
+
+    padding: 14px 27px;
+
+    border-radius: 9px;
+
+    background: #17212c;
+
+    color: #d7e0e9;
+
+    border: 1px solid #354657;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    transition: 0.25s;
+}
+
+.cancel-btn:hover {
+    background: #22303d;
+
+    border-color: #526578;
+
+    color: white;
+}
+
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 750px) {
+
+    .update-page {
+        width: 95%;
+        padding: 30px 10px;
+    }
+
+    .page-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+    .page-header h1 {
+        font-size: 34px;
+    }
+
+    .form-content {
+        grid-template-columns: 1fr;
+
+        padding: 25px 20px;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .card-header {
+        padding: 25px 20px;
+    }
+
+    .form-actions {
+        padding: 20px;
+
+        flex-direction: column-reverse;
+    }
+
+    .update-btn,
+    .cancel-btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+}

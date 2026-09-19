@@ -1,0 +1,703 @@
+/* ================================
+   BASIC PAGE SETTINGS
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        radial-gradient(circle at top right,
+            rgba(0, 255, 153, 0.09),
+            transparent 30%),
+        radial-gradient(circle at bottom left,
+            rgba(0, 255, 153, 0.06),
+            transparent 35%),
+        #05080d;
+
+    color: whitesmoke;
+
+    padding: 50px 30px;
+}
+
+
+/* ================================
+   MAIN PAGE
+================================ */
+
+.product-page {
+    width: 95%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+
+/* ================================
+   PAGE HEADER
+================================ */
+
+.page-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 35px;
+
+    padding: 10px 5px;
+}
+
+.page-heading h1 {
+    font-size: 38px;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    color: whitesmoke;
+}
+
+.page-heading h1 span {
+    color: #00d875;
+}
+
+.page-heading p {
+    margin-top: 8px;
+
+    color: #9da7b3;
+
+    font-size: 15px;
+}
+
+
+/* ================================
+   CREATE BUTTON - GREEN
+================================ */
+
+.create-btn {
+    background: linear-gradient(
+        135deg,
+        #00e676,
+        #00a94f
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    padding: 14px 25px;
+
+    border-radius: 10px;
+
+    border: 1px solid #00ff88;
+
+    box-shadow:
+        0 0 15px rgba(0, 230, 118, 0.35);
+
+    transition: all 0.3s ease;
+}
+
+.create-btn:hover {
+    color: white;
+
+    transform: translateY(-4px) scale(1.03);
+
+    box-shadow:
+        0 0 25px rgba(0, 230, 118, 0.65);
+}
+
+
+/* ================================
+   TABLE CONTAINER
+================================ */
+
+.table-container {
+    width: 100%;
+
+    overflow-x: auto;
+
+    background: #0b1118;
+
+    border: 1px solid #26313c;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.55);
+
+    padding: 20px;
+}
+
+
+/* ================================
+   TABLE
+================================ */
+
+.table {
+    width: 100%;
+
+    min-width: 1000px;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    border: 1px solid #25313c;
+}
+
+
+/* ================================
+   TABLE HEADER
+================================ */
+
+.table thead {
+    background: linear-gradient(
+        180deg,
+        #08743f,
+        #034d34
+    );
+}
+
+.table th {
+    padding: 20px 18px;
+
+    color: whitesmoke;
+
+    text-align: left;
+
+    text-transform: uppercase;
+
+    font-size: 13px;
+
+    letter-spacing: 1.3px;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-bottom: 1px solid #247654;
+}
+
+.table th:last-child {
+    border-right: none;
+}
+
+
+/* ================================
+   TABLE DATA
+================================ */
+
+.table td {
+    padding: 22px 18px;
+
+    color: #dce2e8;
+
+    font-size: 15px;
+
+    border-right: 1px solid #222d37;
+
+    border-bottom: 1px solid #222d37;
+
+    background: #0d131b;
+
+    vertical-align: middle;
+}
+
+.table td:last-child {
+    border-right: none;
+}
+
+
+/* ================================
+   ROW HOVER EFFECT
+================================ */
+
+.table tbody tr {
+    transition: 0.3s ease;
+}
+
+.table tbody tr:hover td {
+    background: #121d27;
+}
+
+.table tbody tr:hover {
+    box-shadow:
+        inset 4px 0 0 #00e676;
+}
+
+
+/* ================================
+   PRODUCT ID
+================================ */
+
+.product-id {
+    display: inline-block;
+
+    min-width: 55px;
+
+    padding: 8px 14px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #008b49,
+        #006738
+    );
+
+    color: white;
+
+    font-weight: bold;
+
+    border-radius: 9px;
+
+    border: 1px solid #00d875;
+
+    box-shadow:
+        0 0 10px rgba(0, 216, 117, 0.18);
+}
+
+
+/* ================================
+   PRODUCT NAME
+================================ */
+
+.product-name {
+    font-weight: 700;
+
+    color: white !important;
+}
+
+
+/* ================================
+   EMAIL
+================================ */
+
+.email {
+    color: #28a8ff !important;
+}
+
+
+/* ================================
+   BATCH
+================================ */
+
+.batch {
+    display: inline-block;
+
+    background: #122b4c;
+
+    border: 1px solid #224d7a;
+
+    color: #dcecff;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+}
+
+
+/* ================================
+   ACTION BUTTON CONTAINER
+================================ */
+
+.action-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+
+/* ================================
+   COMMON BUTTON STYLE
+================================ */
+
+.btn {
+    display: inline-block;
+
+    min-width: 90px;
+
+    padding: 10px 14px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    border: 1px solid transparent;
+
+    transition: all 0.25s ease;
+}
+
+
+/* ================================
+   EDIT BUTTON - BLUE
+================================ */
+
+.edit-btn {
+    background: linear-gradient(
+        135deg,
+        #2196f3,
+        #0069d9
+    );
+
+    border-color: #40a9ff;
+
+    color: white;
+
+    box-shadow:
+        0 0 10px rgba(33, 150, 243, 0.35);
+}
+
+.edit-btn:hover {
+    color: white;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 20px rgba(33, 150, 243, 0.7);
+}
+
+
+/* ================================
+   DETAILS BUTTON - YELLOW
+================================ */
+
+.details-btn {
+    background: linear-gradient(
+        135deg,
+        #ffd600,
+        #ffad00
+    );
+
+    border-color: #ffe95c;
+
+    color: #111;
+
+    box-shadow:
+        0 0 10px rgba(255, 214, 0, 0.35);
+}
+
+.details-btn:hover {
+    color: #111;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 20px rgba(255, 214, 0, 0.7);
+}
+
+
+/* ================================
+   DELETE BUTTON - RED
+================================ */
+
+.delete-btn {
+    background: linear-gradient(
+        135deg,
+        #ff5252,
+        #d50000
+    );
+
+    border-color: #ff7070;
+
+    color: white;
+
+    box-shadow:
+        0 0 10px rgba(255, 82, 82, 0.35);
+}
+
+.delete-btn:hover {
+    color: white;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 20px rgba(255, 82, 82, 0.7);
+}
+
+
+.Soon-btn {
+    background: linear-gradient(
+        135deg,
+        #52ffdf,
+        #00d572
+    );
+
+    border-color: #70ffee;
+
+    color: white;
+
+    box-shadow:
+        0 0 10px rgba(82, 252, 255, 0.35);
+}
+
+.Soon-btn:hover {
+    color: white;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 20px rgba(82, 255, 203, 0.7);
+}
+
+
+/* ================================
+   BUTTON CLICK EFFECT
+================================ */
+
+.btn:active,
+.create-btn:active {
+    transform: scale(0.94);
+}
+
+
+/* ================================
+   TABLE FOOTER
+================================ */
+
+.table-footer {
+    margin-top: 18px;
+
+    padding: 12px 5px;
+
+    color: #9da7b3;
+
+    font-size: 14px;
+}
+
+.table-footer strong {
+    color: #00e676;
+}
+
+
+/* ================================
+   SCROLLBAR
+================================ */
+
+.table-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: #0a1016;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: #176d4b;
+
+    border-radius: 10px;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 25px 12px;
+    }
+
+    .product-page {
+        width: 100%;
+    }
+
+    .page-heading {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .page-heading h1 {
+        font-size: 29px;
+    }
+
+    .create-btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .table-container {
+        padding: 10px;
+    }
+}
+
+/* ================================
+   TEMP DATA ERROR ALERT
+================================ */
+
+.custom-alert {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 25px;
+    padding: 16px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #160d10,
+        #0d1117
+    );
+
+    border: 1px solid #ff5252;
+    border-left: 5px solid #ff3b3b;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.4),
+        0 0 15px rgba(255, 82, 82, 0.12);
+
+    animation: alertSlideDown 0.4s ease;
+}
+
+
+/* Alert Icon */
+
+.alert-icon {
+    min-width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #ff5252,
+        #c90000
+    );
+
+    color: white;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 12px rgba(255, 82, 82, 0.5);
+}
+
+
+/* Alert Text */
+
+.alert-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.alert-content strong {
+    color: #ff6262;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.alert-content span {
+    color: #dce2e8;
+    font-size: 14px;
+}
+
+
+/* Close Button */
+
+.alert-close {
+    background: transparent;
+    border: none;
+
+    color: #9da7b3;
+
+    font-size: 28px;
+    font-weight: 300;
+
+    cursor: pointer;
+
+    padding: 0 5px;
+
+    transition: all 0.25s ease;
+}
+
+.alert-close:hover {
+    color: #ff5252;
+    transform: scale(1.15);
+}
+
+
+/* Alert Animation */
+
+@keyframes alertSlideDown {
+
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .custom-alert {
+        padding: 14px;
+        gap: 12px;
+    }
+
+    .alert-content span {
+        font-size: 13px;
+    }
+}
+
+/* SUCCESS ALERT */
+.success-alert {
+    background: rgba(0, 255, 153, 0.10);
+    border: 1px solid #00ff99;
+    border-left: 5px solid #00ff99;
+    color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 255, 153, 0.15);
+}
+
+.success-alert .alert-icon {
+    background: #00ff99;
+    color: #05080d;
+}
+
+.success-alert .alert-content strong {
+    color: #00ff99;
+}
+
+.success-alert .alert-content span {
+    color: #e5e7eb;
+}

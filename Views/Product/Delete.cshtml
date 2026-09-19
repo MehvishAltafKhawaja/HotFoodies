@@ -1,0 +1,157 @@
+@model ASPNETMVC.Models.ProductTable
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete Product</title>
+
+    <link rel="stylesheet" href="~/CSS/DeleteProd.css" />
+</head>
+
+<body>
+
+    <div class="delete-page">
+
+        <!-- Header -->
+        <div class="page-header">
+            <div>
+                <h1>
+                    Delete <span>Product</span>
+                </h1>
+                <p>Remove a product record from your product management system.</p>
+            </div>
+
+            <a asp-action="ProductList" class="back-top-btn">
+                ← Back to List
+            </a>
+        </div>
+
+
+        <!-- Delete Card -->
+        <div class="delete-card">
+
+            <!-- Warning -->
+            <div class="warning-section">
+
+                <div class="warning-icon">
+                    !
+                </div>
+
+                <div>
+                    <h2>Are you sure?</h2>
+
+                    <p>
+                        You are about to permanently delete this product.
+                        This action cannot be undone.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Product Information -->
+
+            <div class="product-title">
+                <h3>Product Information</h3>
+                <p>Please review the product details before deleting.</p>
+            </div>
+
+
+            <div class="product-details">
+
+                <!-- Product ID -->
+                <div class="detail-item">
+                    <span class="detail-label">
+                        @Html.DisplayNameFor(model => model.ProdId)
+                    </span>
+
+                    <span class="product-id">
+                        @Html.DisplayFor(model => model.ProdId)
+                    </span>
+                </div>
+
+
+                <!-- Product Name -->
+                <div class="detail-item">
+                    <span class="detail-label">
+                        @Html.DisplayNameFor(model => model.ProdName)
+                    </span>
+
+                    <span class="detail-value product-name">
+                        @Html.DisplayFor(model => model.ProdName)
+                    </span>
+                </div>
+
+
+                <!-- Product Expiry -->
+                <div class="detail-item">
+                    <span class="detail-label">
+                        @Html.DisplayNameFor(model => model.ProdExpire)
+                    </span>
+
+                    <span class="detail-value">
+                        @Html.DisplayFor(model => model.ProdExpire)
+                    </span>
+                </div>
+
+
+                <!-- Product Price -->
+                <div class="detail-item">
+                    <span class="detail-label">
+                        @Html.DisplayNameFor(model => model.ProdPrice)
+                    </span>
+
+                    <span class="product-price">
+                        ₹ @Html.DisplayFor(model => model.ProdPrice)
+                    </span>
+                </div>
+
+
+                <!-- Batch ID -->
+                <div class="detail-item">
+                    <span class="detail-label">
+                        @Html.DisplayNameFor(model => model.ProdBatchId)
+                    </span>
+
+                    <span class="batch-badge">
+                        @Html.DisplayFor(model => model.ProdBatchId)
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- Buttons -->
+
+            <div class="delete-actions">
+
+                <form asp-action="Delete" method="post">
+
+                    <!-- IMPORTANT: Product ID -->
+                    <input type="hidden"
+                           asp-for="ProdId" />
+
+                    <button type="submit" class="delete-btn">
+                        🗑 Delete Product
+                    </button>
+
+                    <a asp-action="ProductList"
+                       class="cancel-btn">
+                        Cancel
+                    </a>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

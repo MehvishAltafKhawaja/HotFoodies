@@ -191,8 +191,6 @@ D:\MVC .NET 2\obj\Debug\net10.0\refint\ASPNETMVC.dll
 D:\MVC .NET 2\obj\Debug\net10.0\ASPNETMVC.pdb
 D:\MVC .NET 2\obj\Debug\net10.0\ASPNETMVC.genruntimeconfig.cache
 D:\MVC .NET 2\obj\Debug\net10.0\ref\ASPNETMVC.dll
-D:\MVC .NET 2\obj\Debug\net10.0\compressed\uvg41hn6br-{0}-c9hue6efd6-c9hue6efd6.gz
-D:\MVC .NET 2\obj\Debug\net10.0\compressed\u8vv8rnpfu-{0}-kjb8chmam3-kjb8chmam3.gz
 D:\MVC .NET 2\obj\Debug\net10.0\ASPNETMVC.sourcelink.json
 D:\MVC .NET 2\obj\Debug\net10.0\compressed\qxi6mcr9p3-{0}-zbowopn0dk-zbowopn0dk.gz
 D:\MVC .NET 2\bin\Debug\net10.0\Azure.Core.dll
@@ -443,5 +441,11 @@ D:\MVC .NET 2\bin\Debug\net10.0\runtimes\win-x64\native\msalruntime.dll
 D:\MVC .NET 2\bin\Debug\net10.0\runtimes\win-x86\native\msalruntime_x86.dll
 D:\MVC .NET 2\obj\Debug\net10.0\ASPNETMVC.csproj.AssemblyReference.cache
 D:\MVC .NET 2\obj\Debug\net10.0\ASPNETMVC.csproj.Up2Date
-D:\MVC .NET 2\obj\Debug\net10.0\compressed\x7bgxu5dnk-{0}-4rcw54xfwr-4rcw54xfwr.gz
-D:\MVC .NET 2\obj\Debug\net10.0\compressed\ts26y7jgsv-{0}-yea3p8vni8-yea3p8vni8.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\7srif38bw2-{0}-j5ftmnwm3z-j5ftmnwm3z.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\ts26y7jgsv-{0}-2tykmilbz9-2tykmilbz9.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\h48wx8n4na-{0}-rqtqby7v9q-rqtqby7v9q.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\64gb9tefpb-{0}-gfoou7fhlu-gfoou7fhlu.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\x7bgxu5dnk-{0}-klpc2tchmc-klpc2tchmc.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\uvg41hn6br-{0}-25ip4b1zkw-25ip4b1zkw.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\u8vv8rnpfu-{0}-5zcauwio5z-5zcauwio5z.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\rwppartec6-{0}-szwysdl6sj-szwysdl6sj.gz

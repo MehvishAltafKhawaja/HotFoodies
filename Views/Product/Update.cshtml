@@ -1,0 +1,222 @@
+@model ASPNETMVC.Models.ProductTable
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Update Product</title>
+
+    <link rel="stylesheet" href="~/CSS/UpdateProd.css" />
+</head>
+
+<body>
+
+    <div class="update-page">
+
+        <!-- =========================
+             PAGE HEADER
+        ========================== -->
+        <div class="page-header">
+
+            <div>
+                <h1>
+                    Update <span>Product</span>
+                </h1>
+
+                <p>
+                    Modify your product information and save the changes.
+                </p>
+            </div>
+
+            <a asp-action="ProductList" class="back-top-btn">
+                ← Back to List
+            </a>
+
+        </div>
+
+
+        <!-- =========================
+             UPDATE CARD
+        ========================== -->
+        <div class="update-card">
+
+            <!-- Card Header -->
+            <div class="card-header">
+
+                <div class="edit-icon">
+                    ✎
+                </div>
+
+                <div>
+                    <h2>Edit Product Information</h2>
+                    <p>
+                        Update the fields below and save your changes.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 FORM
+            ========================== -->
+
+            <form asp-action="Update" method="post">
+
+                <div asp-validation-summary="ModelOnly"
+                     class="validation-summary">
+                </div>
+
+
+                <div class="form-content">
+
+                    <!-- PRODUCT ID -->
+                    <div class="form-group">
+
+                        <label asp-for="ProdId"></label>
+
+                        <div class="input-wrapper">
+                            <span class="input-icon">#</span>
+
+                            <input asp-for="ProdId"
+                                   class="form-control"
+                                   readonly />
+                        </div>
+
+                        <span asp-validation-for="ProdId"
+                              class="validation-message">
+                        </span>
+
+                        <small>
+                            Product ID cannot be changed.
+                        </small>
+
+                    </div>
+
+
+                    <!-- PRODUCT NAME -->
+                    <div class="form-group">
+
+                        <label asp-for="ProdName"></label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">P</span>
+
+                            <input asp-for="ProdName"
+                                   class="form-control"
+                                   placeholder="Enter product name" />
+
+                        </div>
+
+                        <span asp-validation-for="ProdName"
+                              class="validation-message">
+                        </span>
+
+                    </div>
+
+
+                    <!-- PRODUCT EXPIRY -->
+                    <div class="form-group">
+
+                        <label asp-for="ProdExpire"></label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">◷</span>
+
+                            <input type="date"
+                                   asp-for="ProdExpire"
+                                   class="form-control" />
+
+                        </div>
+
+                        <span asp-validation-for="ProdExpire"
+                              class="validation-message">
+                        </span>
+
+                    </div>
+
+
+                    <!-- PRODUCT PRICE -->
+                    <div class="form-group">
+
+                        <label asp-for="ProdPrice"></label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">₹</span>
+
+                            <input asp-for="ProdPrice"
+                                   class="form-control"
+                                   placeholder="Enter product price" />
+
+                        </div>
+
+                        <span asp-validation-for="ProdPrice"
+                              class="validation-message">
+                        </span>
+
+                    </div>
+
+
+                    <!-- PRODUCT BATCH ID -->
+                    <div class="form-group full-width">
+
+                        <label asp-for="ProdBatchId"></label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">B</span>
+
+                            <input asp-for="ProdBatchId"
+                                   class="form-control"
+                                   placeholder="Enter batch ID" />
+
+                        </div>
+
+                        <span asp-validation-for="ProdBatchId"
+                              class="validation-message">
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     BUTTONS
+                ========================== -->
+
+                <div class="form-actions">
+
+                    <a asp-action="ProductList"
+                       class="cancel-btn">
+                        Cancel
+                    </a>
+
+                    <button type="submit"
+                            class="update-btn">
+
+                        ✓ Update Product
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- Validation Scripts -->
+    <partial name="_ValidationScriptsPartial" />
+
+</body>
+</html>

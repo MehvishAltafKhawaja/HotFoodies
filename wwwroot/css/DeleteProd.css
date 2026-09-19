@@ -1,0 +1,455 @@
+/* ================================
+   BASIC SETTINGS
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(0, 255, 153, 0.09),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at bottom left,
+            rgba(0, 255, 153, 0.06),
+            transparent 35%
+        ),
+        #05080d;
+
+    color: whitesmoke;
+}
+
+
+/* ================================
+   MAIN PAGE
+================================ */
+
+.delete-page {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 55px 20px;
+}
+
+
+/* ================================
+   PAGE HEADER
+================================ */
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.page-header h1 {
+    font-size: 46px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.page-header h1 span {
+    color: #00d084;
+}
+
+.page-header p {
+    margin-top: 12px;
+    color: #9fb3c8;
+    font-size: 17px;
+}
+
+
+/* ================================
+   BACK BUTTON
+================================ */
+
+.back-top-btn {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, #008e5a, #00d084);
+
+    padding: 16px 25px;
+    border-radius: 12px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    border: 1px solid #00e895;
+
+    box-shadow: 0 0 20px rgba(0, 208, 132, 0.25);
+
+    transition: 0.3s;
+}
+
+.back-top-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 28px rgba(0, 208, 132, 0.45);
+}
+
+
+/* ================================
+   DELETE CARD
+================================ */
+
+.delete-card {
+    max-width: 1000px;
+    margin: auto;
+
+    background: #0d141d;
+
+    border: 1px solid #253241;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.45),
+        0 0 30px rgba(0, 208, 132, 0.03);
+}
+
+
+/* ================================
+   WARNING SECTION
+================================ */
+
+.warning-section {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+    padding: 30px 35px;
+
+    background: rgba(239, 51, 64, 0.08);
+
+    border-bottom: 1px solid rgba(239, 51, 64, 0.25);
+}
+
+.warning-icon {
+    width: 60px;
+    height: 60px;
+
+    min-width: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(239, 51, 64, 0.15);
+
+    border: 2px solid #ef3340;
+
+    color: #ff4655;
+
+    font-size: 32px;
+    font-weight: bold;
+
+    box-shadow: 0 0 20px rgba(239, 51, 64, 0.2);
+}
+
+.warning-section h2 {
+    color: #ff4c58;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.warning-section p {
+    color: #aebccc;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   PRODUCT TITLE
+================================ */
+
+.product-title {
+    padding: 28px 35px 20px;
+}
+
+.product-title h3 {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 7px;
+}
+
+.product-title p {
+    color: #8193a7;
+    font-size: 14px;
+}
+
+
+/* ================================
+   PRODUCT DETAILS
+================================ */
+
+.product-details {
+    margin: 0 35px 35px;
+
+    border: 1px solid #263441;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+}
+
+.detail-item {
+    min-height: 75px;
+
+    display: grid;
+    grid-template-columns: 260px 1fr;
+
+    align-items: center;
+
+    padding: 15px 25px;
+
+    border-bottom: 1px solid #25313d;
+
+    transition: 0.2s;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-item:hover {
+    background: rgba(0, 208, 132, 0.025);
+}
+
+
+/* ================================
+   LABEL
+================================ */
+
+.detail-label {
+    color: #8ea1b5;
+
+    text-transform: uppercase;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* ================================
+   VALUES
+================================ */
+
+.detail-value {
+    color: #e7edf4;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.product-name {
+    font-size: 19px;
+    color: white;
+}
+
+
+/* Product ID */
+
+.product-id {
+    display: inline-flex;
+
+    width: fit-content;
+
+    padding: 8px 25px;
+
+    border-radius: 10px;
+
+    color: white;
+
+    font-weight: bold;
+
+    background: #007d4e;
+
+    border: 1px solid #00d084;
+
+    box-shadow: 0 0 12px rgba(0, 208, 132, 0.12);
+}
+
+
+/* Price */
+
+.product-price {
+    color: #149cff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* Batch */
+
+.batch-badge {
+    display: inline-flex;
+
+    width: fit-content;
+
+    padding: 9px 20px;
+
+    background: #12345a;
+
+    border: 1px solid #285b91;
+
+    border-radius: 25px;
+
+    color: #d9ecff;
+
+    font-weight: bold;
+}
+
+
+/* ================================
+   ACTION SECTION
+================================ */
+
+.delete-actions {
+    padding: 25px 35px;
+
+    background: #090f16;
+
+    border-top: 1px solid #25313d;
+}
+
+.delete-actions form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* ================================
+   DELETE BUTTON
+================================ */
+
+.delete-btn {
+    border: none;
+    cursor: pointer;
+
+    padding: 14px 26px;
+
+    border-radius: 9px;
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    background: linear-gradient(135deg, #ff3b47, #d90016);
+
+    border: 1px solid #ff5863;
+
+    box-shadow: 0 0 18px rgba(255, 44, 60, 0.25);
+
+    transition: 0.25s;
+}
+
+.delete-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 0 25px rgba(255, 44, 60, 0.45);
+}
+
+
+/* ================================
+   CANCEL BUTTON
+================================ */
+
+.cancel-btn {
+    text-decoration: none;
+
+    padding: 14px 27px;
+
+    border-radius: 9px;
+
+    background: #17212c;
+
+    color: #d7e0e9;
+
+    border: 1px solid #354657;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    transition: 0.25s;
+}
+
+.cancel-btn:hover {
+    background: #22303d;
+    border-color: #526578;
+    color: white;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 750px) {
+
+    .delete-page {
+        width: 95%;
+        padding: 30px 10px;
+    }
+
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .page-header h1 {
+        font-size: 34px;
+    }
+
+    .warning-section {
+        padding: 25px 20px;
+    }
+
+    .product-title {
+        padding: 25px 20px 18px;
+    }
+
+    .product-details {
+        margin: 0 20px 25px;
+    }
+
+    .detail-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .delete-actions {
+        padding: 20px;
+    }
+
+    .delete-actions form {
+        flex-direction: column;
+    }
+
+    .delete-btn,
+    .cancel-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

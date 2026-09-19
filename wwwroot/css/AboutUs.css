@@ -1,0 +1,771 @@
+/* ==========================================
+   ABOUT PAGE
+========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+.about-hero,
+.about-section,
+.why-section,
+.menu-info-section,
+.mission-section,
+.about-cta {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.about-hero {
+    min-height: 520px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 20px;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(0, 208, 132, 0.12),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at bottom left,
+            rgba(0, 208, 132, 0.06),
+            transparent 35%
+        ),
+        #05080d;
+
+    border-bottom: 1px solid #1e2b35;
+}
+
+
+.about-hero-content {
+    max-width: 900px;
+}
+
+
+.about-tag,
+.section-tag {
+    display: inline-block;
+
+    color: #00d084;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+}
+
+
+.about-hero h1 {
+    color: white;
+
+    font-size: 56px;
+
+    line-height: 1.15;
+
+    font-weight: 800;
+
+    margin-bottom: 22px;
+}
+
+
+.about-hero h1 span {
+    color: #00d084;
+}
+
+
+.about-hero p {
+    max-width: 750px;
+
+    margin: 0 auto 30px;
+
+    color: #9aabba;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   HERO BUTTONS
+========================================== */
+
+.hero-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: 0.25s;
+}
+
+
+.primary-btn {
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #009d63,
+            #00dc89
+        );
+
+    border: 1px solid #00ed95;
+
+    box-shadow:
+        0 0 20px rgba(0, 208, 132, 0.20);
+}
+
+
+.primary-btn:hover {
+    color: white;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 28px rgba(0, 208, 132, 0.40);
+}
+
+
+.secondary-btn {
+    color: #d8e2eb;
+
+    background: #121b25;
+
+    border: 1px solid #354657;
+}
+
+
+.secondary-btn:hover {
+    color: white;
+
+    background: #1b2835;
+}
+
+
+/* ==========================================
+   OUR STORY
+========================================== */
+
+.about-section {
+    padding: 100px 20px;
+
+    background: #070b10;
+}
+
+
+.about-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.story-content h2,
+.section-heading h2,
+.menu-info-content h2,
+.about-cta h2 {
+    color: white;
+
+    font-size: 40px;
+
+    font-weight: 800;
+
+    margin-bottom: 25px;
+}
+
+
+.story-content h2 span,
+.section-heading h2 span,
+.menu-info-content h2 span,
+.about-cta h2 span {
+    color: #00d084;
+}
+
+
+.story-content > p {
+    color: #8fa1b2;
+
+    line-height: 1.9;
+
+    font-size: 15px;
+
+    margin-bottom: 18px;
+}
+
+
+/* ==========================================
+   QUOTE
+========================================== */
+
+.story-highlight {
+    display: flex;
+
+    gap: 18px;
+
+    margin-top: 30px;
+
+    padding: 22px;
+
+    background: rgba(0, 208, 132, 0.06);
+
+    border-left: 4px solid #00d084;
+
+    border-radius: 0 10px 10px 0;
+}
+
+
+.story-highlight > span {
+    color: #00d084;
+
+    font-size: 45px;
+
+    line-height: 30px;
+}
+
+
+.story-highlight p {
+    color: #c5d0da;
+
+    line-height: 1.7;
+
+    font-style: italic;
+
+    margin: 0;
+}
+
+
+/* ==========================================
+   RESTAURANT CARD
+========================================== */
+
+.about-info-card {
+    padding: 40px;
+
+    background: #0d141d;
+
+    border: 1px solid #253441;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+
+.info-card-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #00975f,
+            #00df8b
+        );
+
+    color: white;
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 0 20px rgba(0, 208, 132, 0.25);
+}
+
+
+.about-info-card h3 {
+    color: white;
+
+    font-size: 27px;
+
+    margin-bottom: 5px;
+}
+
+
+.restaurant-type {
+    color: #00d084;
+
+    font-size: 14px;
+}
+
+
+.info-line {
+    height: 1px;
+
+    margin: 25px 0;
+
+    background: #263441;
+}
+
+
+.restaurant-detail {
+    display: flex;
+
+    gap: 15px;
+
+    margin-bottom: 22px;
+}
+
+
+.detail-icon {
+    width: 35px;
+    height: 35px;
+
+    min-width: 35px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+
+    background: rgba(0, 208, 132, 0.10);
+
+    color: #00d084;
+
+    font-weight: bold;
+}
+
+
+.restaurant-detail strong {
+    color: white;
+
+    font-size: 14px;
+}
+
+
+.restaurant-detail p {
+    color: #718497;
+
+    font-size: 13px;
+
+    margin: 4px 0 0;
+}
+
+
+/* ==========================================
+   WHY CHOOSE US
+========================================== */
+
+.why-section {
+    padding: 100px 20px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(0, 208, 132, 0.04),
+            transparent 40%
+        ),
+        #05080d;
+}
+
+
+.section-heading {
+    max-width: 700px;
+
+    margin: auto auto 50px;
+
+    text-align: center;
+}
+
+
+.section-heading p {
+    color: #899bad;
+
+    line-height: 1.7;
+}
+
+
+.why-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.why-card {
+    padding: 30px 25px;
+
+    background: #0d141d;
+
+    border: 1px solid #253241;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+
+.why-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(0, 208, 132, 0.55);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+
+.why-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 11px;
+
+    background: rgba(0, 208, 132, 0.10);
+
+    border: 1px solid #00d084;
+
+    color: #00d084;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+.why-card h3 {
+    color: white;
+
+    font-size: 18px;
+
+    margin-bottom: 12px;
+}
+
+
+.why-card p {
+    color: #8193a5;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* ==========================================
+   MENU INFORMATION
+========================================== */
+
+.menu-info-section {
+    padding: 100px 20px;
+
+    background: #080d13;
+}
+
+
+.menu-info-content {
+    max-width: 850px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+.menu-info-content > p {
+    color: #899bad;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+
+/* ==========================================
+   FOOD TAGS
+========================================== */
+
+.food-tags {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+
+.food-tags span {
+    padding: 10px 19px;
+
+    border-radius: 30px;
+
+    background: #101923;
+
+    border: 1px solid #2a3a48;
+
+    color: #c2cdd7;
+
+    font-size: 13px;
+
+    transition: 0.25s;
+}
+
+
+.food-tags span:hover {
+    color: #00d084;
+
+    border-color: #00d084;
+}
+
+
+/* ==========================================
+   MISSION
+========================================== */
+
+.mission-section {
+    padding: 100px 20px;
+
+    background: #05080d;
+}
+
+
+.mission-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.mission-card {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 35px;
+
+    background: #0d141d;
+
+    border: 1px solid #253241;
+
+    border-radius: 15px;
+}
+
+
+.mission-number {
+    display: block;
+
+    color: #00d084;
+
+    font-size: 35px;
+
+    font-weight: 800;
+
+    opacity: .35;
+
+    margin-bottom: 20px;
+}
+
+
+.mission-card h3 {
+    color: white;
+
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+
+.mission-card p {
+    color: #8193a5;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    margin: 0;
+}
+
+
+/* ==========================================
+   CALL TO ACTION
+========================================== */
+
+.about-cta {
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0, 208, 132, 0.10),
+            transparent 45%
+        ),
+        #07100d;
+}
+
+
+.cta-content {
+    max-width: 800px;
+
+    margin: auto;
+}
+
+
+.about-cta p {
+    color: #8fa1b2;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 992px) {
+
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .why-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .mission-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 650px) {
+
+    .about-hero {
+        min-height: 470px;
+
+        padding: 60px 20px;
+    }
+
+
+    .about-hero h1 {
+        font-size: 37px;
+    }
+
+
+    .story-content h2,
+    .section-heading h2,
+    .menu-info-content h2,
+    .about-cta h2 {
+        font-size: 30px;
+    }
+
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .why-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-section,
+    .why-section,
+    .menu-info-section,
+    .mission-section,
+    .about-cta {
+        padding: 70px 20px;
+    }
+
+
+    .about-info-card {
+        padding: 28px 22px;
+    }
+
+}
