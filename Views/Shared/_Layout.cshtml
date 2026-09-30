@@ -82,6 +82,21 @@
 
                         </li>
 
+                        @* Session *@
+
+                         <li class="nav-item">
+
+                            <a class="nav-link custom-nav-link"
+                               asp-area=""
+                               asp-controller="Home"
+                               asp-action="sessionform">
+
+                                Session
+
+                            </a>
+
+                        </li>
+
 
                         <!-- PRODUCT LIST -->
                         <li class="nav-item">
@@ -126,6 +141,32 @@
                             </a>
 
                         </li>
+                         <!-- Employee List -->
+                         <li class="nav-item">
+
+                            <a class="nav-link custom-nav-link"
+                               asp-area=""
+                               asp-controller="Employee"
+                               asp-action="EmployeeList">
+
+                                Emp List
+
+                            </a>
+
+                        </li>
+                         <!-- Employee Create -->
+                         <li class="nav-item">
+
+                            <a class="nav-link custom-nav-link"
+                               asp-area=""
+                               asp-controller="Employee"
+                               asp-action="EmployeeCreate">
+
+                                + Create Emp 
+
+                            </a>
+
+                        </li>
 
 
                         <!-- CREATE PRODUCT -->
@@ -141,7 +182,36 @@
                             </a>
 
                         </li>
+                         <!-- CREATE USER -->
+                        <li class="nav-item ms-lg-3">
 
+                            <a class="create-product-nav"
+                               asp-area=""
+                               asp-controller="User"
+                               asp-action="CreateUser">
+
+                                + Add User
+
+                            </a>
+
+                        </li>
+                         <!-- PRODUCT List-->
+                        <li class="nav-item ms-lg-3">
+
+                            <a class="create-product-nav"
+                               asp-area=""
+                               asp-controller="User"
+                               asp-action="UserList">
+
+                                 User List
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+                    <ul>
+                        <partial name="_UserPartial" />
                     </ul>
 
                 </div>
@@ -327,7 +397,43 @@
 
     <script src="~/js/site.js"
             asp-append-version="true"></script>
+    <script>
+        $(document).ready(function(){
+        $("#district").prop("disabled", true);
+        $(#state).change(function(){
+            var id = $(#state).val();
+            $.ajax({
+                cache: false,
+                type: "GET",
+                url: '@Url.Action("GetDistrict","Employee")',
+                data: {"id": id},
+                success: function (json, textStatus){
+                    $("#district").empty();
+                    json = json || {};
+                    for (var i = 0; i <json.length; i++)
+                    {
+                            $("#district").append(
+                            '<option value="' +
+                            item.districtId +
+                            '">' +
+                            item.districtName +
+                            '</option>'
+                        );
 
+                    });
+
+                    $("#district").prop("disabled", false);
+                },
+
+                error: function () {
+                    alert("Data Not Found!");
+                }
+            });
+
+        });
+
+    });
+</script>
     @await RenderSectionAsync("Scripts", required: false)
 
 </body>

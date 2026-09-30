@@ -1,0 +1,577 @@
+/* ==========================================
+   BASIC PAGE
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(0, 174, 255, 0.12),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at bottom left,
+            rgba(0, 210, 255, 0.07),
+            transparent 35%
+        ),
+        #05080d;
+
+    color: #f2f7fb;
+}
+
+
+/* ==========================================
+   MAIN PAGE
+========================================== */
+
+.employee-page {
+    width: 90%;
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 55px 20px;
+}
+
+
+/* ==========================================
+   PAGE HEADER
+========================================== */
+
+.page-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 46px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.page-header h1 span {
+    color: #00b7ff;
+}
+
+.page-header p {
+    color: #91a8ba;
+
+    font-size: 17px;
+
+    margin-top: 10px;
+}
+
+
+/* ==========================================
+   BACK BUTTON
+========================================== */
+
+.back-top-btn {
+    text-decoration: none;
+
+    color: white;
+
+    padding: 15px 24px;
+
+    border-radius: 11px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #006fa6,
+            #00b7ff
+        );
+
+    border: 1px solid #00c8ff;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 0 20px rgba(0, 183, 255, 0.20);
+
+    transition: 0.3s;
+}
+
+.back-top-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 30px rgba(0, 183, 255, 0.45);
+}
+
+
+/* ==========================================
+   EMPLOYEE CARD
+========================================== */
+
+.employee-card {
+    max-width: 1000px;
+
+    margin: auto;
+
+    background: #0d141d;
+
+    border: 1px solid #263847;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.45),
+        0 0 30px rgba(0, 183, 255, 0.04);
+}
+
+
+/* ==========================================
+   CARD HEADER
+========================================== */
+
+.card-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 28px 35px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 183, 255, 0.10),
+            rgba(0, 183, 255, 0.02)
+        );
+
+    border-bottom: 1px solid #263847;
+}
+
+.card-header h2 {
+    color: white;
+
+    font-size: 23px;
+
+    margin-bottom: 6px;
+}
+
+.card-header p {
+    color: #8da4b7;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   EMPLOYEE ICON
+========================================== */
+
+.employee-icon {
+    width: 55px;
+
+    height: 55px;
+
+    min-width: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        rgba(0, 183, 255, 0.12);
+
+    border: 1px solid #00b7ff;
+
+    border-radius: 12px;
+
+    color: #00c8ff;
+
+    font-size: 27px;
+
+    box-shadow:
+        0 0 18px rgba(0, 183, 255, 0.12);
+}
+
+
+/* ==========================================
+   FORM CONTENT
+========================================== */
+
+.form-content {
+    padding: 35px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 30px;
+
+    row-gap: 27px;
+}
+
+
+/* ==========================================
+   FORM GROUP
+========================================== */
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* ==========================================
+   LABEL
+========================================== */
+
+.form-group label {
+    margin-bottom: 10px;
+
+    color: #c7d6e2;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* ==========================================
+   INPUT WRAPPER
+========================================== */
+
+.input-wrapper {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* ==========================================
+   INPUT ICON
+========================================== */
+
+.input-icon {
+    position: absolute;
+
+    left: 17px;
+
+    z-index: 2;
+
+    color: #00b7ff;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    pointer-events: none;
+}
+
+
+/* ==========================================
+   INPUT / SELECT
+========================================== */
+
+.form-control {
+    width: 100%;
+
+    height: 54px;
+
+    padding: 0 17px 0 48px;
+
+    border-radius: 10px;
+
+    border: 1px solid #2c4050;
+
+    outline: none;
+
+    background: #080e15;
+
+    color: #eaf4fa;
+
+    font-size: 16px;
+
+    transition: 0.25s;
+}
+
+.form-control::placeholder {
+    color: #536879;
+}
+
+
+/* ==========================================
+   FOCUS
+========================================== */
+
+.form-control:focus {
+    border-color: #00b7ff;
+
+    background: #091119;
+
+    box-shadow:
+        0 0 0 3px rgba(0, 183, 255, 0.08),
+        0 0 16px rgba(0, 183, 255, 0.08);
+}
+
+
+/* ==========================================
+   SELECT ARROW / OPTIONS
+========================================== */
+
+select.form-control {
+    cursor: pointer;
+}
+
+select.form-control option {
+    background: #0d141d;
+
+    color: white;
+}
+
+
+/* ==========================================
+   DISABLED DISTRICT
+========================================== */
+
+.form-control:disabled {
+    background: #101821;
+
+    color: #5c6d7c;
+
+    border-color: #202e3a;
+
+    cursor: not-allowed;
+
+    opacity: 0.75;
+}
+
+
+/* ==========================================
+   DATE
+========================================== */
+
+input[type="date"] {
+    color-scheme: dark;
+}
+
+
+/* ==========================================
+   VALIDATION
+========================================== */
+
+.validation-message {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #ff5968;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   VALIDATION SUMMARY
+========================================== */
+
+.validation-summary {
+    margin: 25px 35px 0;
+
+    color: #ff5968;
+
+    background:
+        rgba(255, 48, 64, 0.08);
+
+    border-left: 4px solid #ef3340;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+}
+
+.validation-summary:empty {
+    display: none;
+}
+
+.validation-summary ul {
+    padding: 15px 20px 15px 35px;
+}
+
+
+/* ==========================================
+   ACTION SECTION
+========================================== */
+
+.form-actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 15px;
+
+    padding: 24px 35px;
+
+    background: #090f16;
+
+    border-top: 1px solid #263542;
+}
+
+
+/* ==========================================
+   CREATE BUTTON
+========================================== */
+
+.create-btn {
+    border: none;
+
+    cursor: pointer;
+
+    padding: 14px 27px;
+
+    border-radius: 9px;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0077ad,
+            #00b7ff
+        );
+
+    border: 1px solid #00c8ff;
+
+    box-shadow:
+        0 0 18px rgba(0, 183, 255, 0.25);
+
+    transition: 0.25s;
+}
+
+.create-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 27px rgba(0, 183, 255, 0.45);
+}
+
+
+/* ==========================================
+   CANCEL BUTTON
+========================================== */
+
+.cancel-btn {
+    text-decoration: none;
+
+    padding: 14px 27px;
+
+    border-radius: 9px;
+
+    background: #17212c;
+
+    color: #d7e0e9;
+
+    border: 1px solid #354657;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    transition: 0.25s;
+}
+
+.cancel-btn:hover {
+    background: #22303d;
+
+    border-color: #526578;
+
+    color: white;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 750px) {
+
+    .employee-page {
+        width: 95%;
+
+        padding: 30px 10px;
+    }
+
+    .page-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+    .page-header h1 {
+        font-size: 34px;
+    }
+
+    .card-header {
+        padding: 25px 20px;
+    }
+
+    .form-content {
+        grid-template-columns: 1fr;
+
+        padding: 25px 20px;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .form-actions {
+        padding: 20px;
+
+        flex-direction: column-reverse;
+    }
+
+    .create-btn,
+    .cancel-btn {
+        width: 100%;
+
+        text-align: center;
+    }
+}

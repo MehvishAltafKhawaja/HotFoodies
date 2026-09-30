@@ -449,3 +449,6 @@ D:\MVC .NET 2\obj\Debug\net10.0\compressed\x7bgxu5dnk-{0}-klpc2tchmc-klpc2tchmc.
 D:\MVC .NET 2\obj\Debug\net10.0\compressed\uvg41hn6br-{0}-25ip4b1zkw-25ip4b1zkw.gz
 D:\MVC .NET 2\obj\Debug\net10.0\compressed\u8vv8rnpfu-{0}-5zcauwio5z-5zcauwio5z.gz
 D:\MVC .NET 2\obj\Debug\net10.0\compressed\rwppartec6-{0}-szwysdl6sj-szwysdl6sj.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\e95yks2xc6-{0}-hdp9nah1ku-hdp9nah1ku.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\9b62run63g-{0}-6qeh25s042-6qeh25s042.gz
+D:\MVC .NET 2\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

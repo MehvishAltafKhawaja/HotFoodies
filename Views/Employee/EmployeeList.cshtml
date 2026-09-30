@@ -1,0 +1,266 @@
+@model IEnumerable<ASPNETMVC.Models.Employee>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Employee List</title>
+
+    <link rel="stylesheet" href="~/css/EmpList.css" />
+</head>
+
+<body>
+
+    <div class="employee-page">
+
+        <!-- =================================
+             PAGE HEADER
+        ================================== -->
+
+        <div class="page-header">
+
+            <div>
+                <h1>
+                    Employee <span>List</span>
+                </h1>
+
+                <p>
+                    Manage and view all employees
+                </p>
+            </div>
+
+            <a asp-action="EmployeeCreate"
+               class="create-top-btn">
+                + Add Employee
+            </a>
+
+        </div>
+
+
+        <!-- =================================
+             EMPLOYEE CARD
+        ================================== -->
+
+        <div class="employee-card">
+
+            <!-- CARD HEADER -->
+
+            <div class="card-header">
+
+                <div class="employee-icon">
+                    👥
+                </div>
+
+                <div>
+                    <h2>Employees</h2>
+
+                    <p>
+                        Employee information and location details
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 TABLE
+            ================================== -->
+
+            <div class="table-container">
+
+                <table class="employee-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                ID
+                            </th>
+
+                            <th>
+                                Employee Name
+                            </th>
+
+                            <th>
+                                Gender
+                            </th>
+
+                            <th>
+                                Date of Birth
+                            </th>
+
+                            <th>
+                                State
+                            </th>
+
+                            <th>
+                                District
+                            </th>
+
+                            <th class="action-column">
+                                Actions
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+
+                                <!-- Employee ID -->
+
+                                <td>
+                                    <span class="employee-id">
+                                        @item.EmpId
+                                    </span>
+                                </td>
+
+
+                                <!-- Employee Name -->
+
+                                <td>
+
+                                    <div class="employee-name">
+
+                                        <div class="avatar">
+                                            @(
+                                                string.IsNullOrEmpty(item.EmpName)
+                                                    ? "?"
+                                                    : item.EmpName.Substring(0, 1).ToUpper()
+                                            )
+                                        </div>
+
+                                        <span>
+                                            @item.EmpName
+                                        </span>
+
+                                    </div>
+
+                                </td>
+
+
+                                <!-- Gender -->
+
+                                <td>
+
+                                    @if (item.EmpGender == "Male")
+                                    {
+                                        <span class="gender male">
+                                            Male
+                                        </span>
+                                    }
+                                    else if (item.EmpGender == "Female")
+                                    {
+                                        <span class="gender female">
+                                            Female
+                                        </span>
+                                    }
+                                    else
+                                    {
+                                        <span class="gender other">
+                                            @item.EmpGender
+                                        </span>
+                                    }
+
+                                </td>
+
+
+                                <!-- Date of Birth -->
+
+                                <td>
+                                    @(
+                                        item.EmpDob.HasValue
+                                            ? item.EmpDob.Value.ToString("dd-MM-yyyy")
+                                            : "-"
+                                    )
+                                </td>
+
+
+                                <!-- State -->
+
+                                <td>
+                                    @item.StateId
+                                </td>
+
+
+                                <!-- District -->
+
+                                <td>
+                                    @item.DistrictId
+                                </td>
+
+
+                                <!-- Actions -->
+
+                                <td>
+
+                                    <div class="action-buttons">
+
+                                        <a asp-action="Edit"
+                                           asp-route-id="@item.EmpId"
+                                           class="action-btn edit-btn">
+                                            Edit
+                                        </a>
+
+                                        <a asp-action="Details"
+                                           asp-route-id="@item.EmpId"
+                                           class="action-btn details-btn">
+                                            Details
+                                        </a>
+
+                                        <a asp-action="Delete"
+                                           asp-route-id="@item.EmpId"
+                                           class="action-btn delete-btn">
+                                            Delete
+                                        </a>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                        }
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <!-- =================================
+                 CARD FOOTER
+            ================================== -->
+
+            <div class="card-footer">
+
+                <span>
+                    Total Employees:
+                    <strong>@Model.Count()</strong>
+                </span>
+
+                <a asp-action="EmployeeCreate"
+                   class="footer-create-btn">
+                    + Create New Employee
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

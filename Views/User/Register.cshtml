@@ -1,0 +1,60 @@
+@model  ASPNETMVC.ViewModel.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container-fluid">
+   <div class="row">
+      <div class="col-sm-12 col-lg-6 col-mf-12 p-3 bg-body-light regform">
+         <h1 class="mb-4 bg-body-primary p-3 text-center fw-bold">Register</h1>
+         <form method="post">
+
+             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+             <div class="mb-3">
+                <label asp-for="Name" class="form-label fw-bold"></label>
+                <input asp-for="Name" class=form-control />
+                <span asp-validation-for="Name" class="text-danger"></span>
+             </div>
+             <div class="mb-3">
+                <label asp-for="Email" class="form-label fw-bold"></label>
+                <input asp-for="Email" class=form-control />
+                <span asp-validation-for="Email" class="text-danger"></span>
+             </div>
+             <div class="mb-3">
+                <label asp-for="password" class="form-label fw-bold"></label>
+                <input asp-for="password" class=form-control />
+                <span asp-validation-for="password" class="text-danger"></span>
+             </div>
+
+              <div class="mb-3">
+                <label asp-for="confirmpassword" class="form-label fw-bold"></label>
+                <input asp-for="confirmpassword" class=form-control />
+                <span asp-validation-for="confirmpassword" class="text-danger"></span>
+             </div>
+
+               <div class="mb-3">
+                <label asp-for="EmpGender" class="form-label fw-bold"></label>
+                <input asp-for="EmpGender" class=form-control />
+                <span asp-validation-for="EmpGender" class="text-danger"></span>
+             </div>
+              
+              <div class="mb-3">
+                <label asp-for="ImageUrl" class="form-label fw-bold"></label>
+                <input type="file" asp-for="ImageUrl" class=form-control />
+                <span asp-validation-for="ImageUrl" class="text-danger"></span>
+             </div>
+             <div class="mb-3">
+                   <input type="submit" class="btn btn-info fw-bold" value="Register" />
+             </div>
+             <p class="text-center">
+                Already Having an Account: <a asp-asp-controller="Home" asp-action="Index" class="text-decoration-none mt-3 text-center">Login</a>
+             </p>
+             <p class="text-center">
+              <a asp-asp-controller="Home" asp-action="Index" class="text-decoration-none mt-3 text-center">Back</a>
+             </p>
+         </form>
+      </div>
+   </div>
+</div>

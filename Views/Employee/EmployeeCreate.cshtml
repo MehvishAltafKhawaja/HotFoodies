@@ -1,0 +1,379 @@
+@model ASPNETMVC.Models.Employee
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create Employee</title>
+
+    <link rel="stylesheet" href="~/css/EmpCreate.css" />
+</head>
+
+<body>
+
+    <div class="employee-page">
+
+        <!-- =========================
+             PAGE HEADER
+        ========================== -->
+
+        <div class="page-header">
+
+            <div>
+                <h1>
+                    Employee <span>Create</span>
+                </h1>
+
+                <p>
+                    Add a new employee to your organization
+                </p>
+            </div>
+
+            <a asp-action="EmployeeList"
+               class="back-top-btn">
+                ← Employee List
+            </a>
+
+        </div>
+
+
+        <!-- =========================
+             CREATE CARD
+        ========================== -->
+
+        <div class="employee-card">
+
+            <!-- CARD HEADER -->
+
+            <div class="card-header">
+
+                <div class="employee-icon">
+                    👤
+                </div>
+
+                <div>
+                    <h2>Create Employee</h2>
+
+                    <p>
+                        Enter employee information and location details
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- VALIDATION -->
+
+            <div asp-validation-summary="ModelOnly"
+                 class="validation-summary">
+            </div>
+
+
+            <!-- FORM -->
+
+            <form asp-action="EmployeeCreate"
+                  method="post">
+
+                <div class="form-content">
+
+
+                    <!-- =========================
+                         EMPLOYEE NAME
+                    ========================== -->
+
+                    <div class="form-group">
+
+                        <label asp-for="EmpName">
+                            Employee Name
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                👤
+                            </span>
+
+                            <input asp-for="EmpName"
+                                   class="form-control"
+                                   placeholder="Enter employee name" />
+
+                        </div>
+
+                        <span asp-validation-for="EmpName"
+                              class="validation-message">
+                        </span>
+
+                    </div>
+
+
+                    <!-- =========================
+                         GENDER
+                    ========================== -->
+
+                    <div class="form-group">
+
+                        <label asp-for="EmpGender">
+                            Gender
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                ◉
+                            </span>
+
+                            <select asp-for="EmpGender"
+                                    class="form-control">
+
+                                <option value="Male">
+                                    Male
+                                </option>
+
+                                <option value="Female">
+                                    Female
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <span asp-validation-for="EmpGender"
+                              class="validation-message">
+                        </span>
+
+                    </div>
+
+
+                    <!-- =========================
+                         DATE OF BIRTH
+                    ========================== -->
+
+                    <div class="form-group">
+
+                        <label asp-for="EmpDob">
+                            Date of Birth
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                ▣
+                            </span>
+
+                            <input type="date"
+                                   asp-for="EmpDob"
+                                   class="form-control" />
+
+                        </div>
+
+                        <span asp-validation-for="EmpDob"
+                              class="validation-message">
+                        </span>
+
+                    </div>
+
+
+                    <!-- =========================
+                         STATE
+                    ========================== -->
+
+                    <div class="form-group">
+
+                        <label asp-for="StateId">
+                            State
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                ◈
+                            </span>
+
+                            <select asp-for="StateId"
+                                    id="state"
+                                    class="form-control"
+                                    asp-items="@(new SelectList(ViewBag.States, "StateId", "StateName"))">
+
+                                <option value="">
+                                    -- Select State --
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <span asp-validation-for="StateId"
+                              class="validation-message">
+                        </span>
+
+                    </div>
+
+
+                    <!-- =========================
+                         DISTRICT
+                    ========================== -->
+
+                    <div class="form-group full-width">
+
+                        <label asp-for="DistrictId">
+                            District
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                ◇
+                            </span>
+
+                            <select asp-for="DistrictId"
+                                    id="district"
+                                    class="form-control"
+                                    disabled>
+
+                                <option value="">
+                                    -- Select District --
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <span asp-validation-for="DistrictId"
+                              class="validation-message">
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     ACTION BUTTONS
+                ========================== -->
+
+                <div class="form-actions">
+
+                    <a asp-action="EmployeeList"
+                       class="cancel-btn">
+                        Cancel
+                    </a>
+
+                    <button type="submit"
+                            class="create-btn">
+                        Create Employee
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         STATE → DISTRICT AJAX
+    ========================== -->
+
+    <script>
+
+        document.getElementById("state")
+            .addEventListener("change", function () {
+
+                var stateId = this.value;
+
+                var districtDropdown =
+                    document.getElementById("district");
+
+
+                // Clear old districts
+
+                districtDropdown.innerHTML =
+                    '<option value="">-- Select District --</option>';
+
+
+                // No state selected
+
+                if (stateId === "") {
+
+                    districtDropdown.disabled = true;
+
+                    return;
+                }
+
+
+                // Get districts from controller
+
+                fetch('/Employee/GetDistrict?id=' + stateId)
+
+                    .then(response => {
+
+                        if (!response.ok) {
+
+                            throw new Error(
+                                "Unable to get districts"
+                            );
+
+                        }
+
+                        return response.json();
+
+                    })
+
+                    .then(data => {
+
+                        console.log(
+                            "District data:",
+                            data
+                        );
+
+
+                        data.forEach(function (district) {
+
+                            var option =
+                                document.createElement("option");
+
+                            option.value =
+                                district.districtId;
+
+                            option.text =
+                                district.districtName;
+
+                            districtDropdown
+                                .appendChild(option);
+
+                        });
+
+
+                        // Enable district
+
+                        districtDropdown.disabled = false;
+
+                    })
+
+                    .catch(error => {
+
+                        console.error(error);
+
+                        alert(
+                            "Unable to load districts."
+                        );
+
+                    });
+
+            });
+
+    </script>
+
+
+</body>
+</html>

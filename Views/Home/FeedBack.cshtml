@@ -1,7 +1,7 @@
 @{
     ViewData["Title"] = "Feedback";
 }
-
+<h2>@ViewData["Name"]</h2>
 <link rel="stylesheet" href="~/CSS/feedback.css" asp-append-version="true" />
 
 <h1>FeedBack 😎</h1>
@@ -9,6 +9,7 @@
 <div class="fb-class">
 
     <div class="form-out">
+
 
         <form class="fb-from" name="fr" method="post" asp-action="ShowFeedBackData" asp-controller="Admin">
 
