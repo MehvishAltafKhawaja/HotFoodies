@@ -1,60 +1,265 @@
-@model  ASPNETMVC.ViewModel.RegisterViewModel
+@model ASPNETMVC.ViewModel.RegisterViewModel
 
 @{
     ViewData["Title"] = "Register";
 }
 
-<div class="container-fluid">
-   <div class="row">
-      <div class="col-sm-12 col-lg-6 col-mf-12 p-3 bg-body-light regform">
-         <h1 class="mb-4 bg-body-primary p-3 text-center fw-bold">Register</h1>
-         <form method="post">
+<link rel="stylesheet" href="~/css/register.css" />
 
-             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="register-page">
 
-             <div class="mb-3">
-                <label asp-for="Name" class="form-label fw-bold"></label>
-                <input asp-for="Name" class=form-control />
-                <span asp-validation-for="Name" class="text-danger"></span>
-             </div>
-             <div class="mb-3">
-                <label asp-for="Email" class="form-label fw-bold"></label>
-                <input asp-for="Email" class=form-control />
-                <span asp-validation-for="Email" class="text-danger"></span>
-             </div>
-             <div class="mb-3">
-                <label asp-for="password" class="form-label fw-bold"></label>
-                <input asp-for="password" class=form-control />
-                <span asp-validation-for="password" class="text-danger"></span>
-             </div>
+    <!-- Page Header -->
+    <div class="page-header">
+        <div>
+            <h1>
+                User <span>Register</span>
+            </h1>
+            <p>Create a new account for your organization</p>
+        </div>
 
-              <div class="mb-3">
-                <label asp-for="confirmpassword" class="form-label fw-bold"></label>
-                <input asp-for="confirmpassword" class=form-control />
-                <span asp-validation-for="confirmpassword" class="text-danger"></span>
-             </div>
+        <a asp-controller="Home"
+           asp-action="Index"
+           class="back-btn">
+            ← Back
+        </a>
+    </div>
 
-               <div class="mb-3">
-                <label asp-for="EmpGender" class="form-label fw-bold"></label>
-                <input asp-for="EmpGender" class=form-control />
-                <span asp-validation-for="EmpGender" class="text-danger"></span>
-             </div>
-              
-              <div class="mb-3">
-                <label asp-for="ImageUrl" class="form-label fw-bold"></label>
-                <input type="file" asp-for="ImageUrl" class=form-control />
-                <span asp-validation-for="ImageUrl" class="text-danger"></span>
-             </div>
-             <div class="mb-3">
-                   <input type="submit" class="btn btn-info fw-bold" value="Register" />
-             </div>
-             <p class="text-center">
-                Already Having an Account: <a asp-asp-controller="Home" asp-action="Index" class="text-decoration-none mt-3 text-center">Login</a>
-             </p>
-             <p class="text-center">
-              <a asp-asp-controller="Home" asp-action="Index" class="text-decoration-none mt-3 text-center">Back</a>
-             </p>
-         </form>
-      </div>
-   </div>
+
+    <!-- Register Card -->
+    <div class="register-card">
+
+        <!-- Card Header -->
+        <div class="register-card-header">
+
+            <div class="register-icon">
+                👤
+            </div>
+
+            <div>
+                <h2>Create Account</h2>
+                <p>Enter your personal and account information</p>
+            </div>
+
+        </div>
+
+
+        <!-- Form -->
+        <form method="post"
+              enctype="multipart/form-data"
+              class="register-form">
+
+            <div asp-validation-summary="ModelOnly"
+                 class="validation-summary text-danger">
+            </div>
+
+
+            <div class="form-grid">
+
+                <!-- NAME -->
+                <div class="form-group">
+
+                    <label asp-for="Name">
+                        NAME
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">
+                            👤
+                        </span>
+
+                        <input asp-for="Name"
+                               class="form-control"
+                               placeholder="Enter your name" />
+
+                    </div>
+
+                    <span asp-validation-for="Name"
+                          class="validation-message">
+                    </span>
+
+                </div>
+
+
+                <!-- EMAIL -->
+                <div class="form-group">
+
+                    <label asp-for="Email">
+                        EMAIL
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">
+                            ✉
+                        </span>
+
+                        <input asp-for="Email"
+                               class="form-control"
+                               placeholder="Enter your email" />
+
+                    </div>
+
+                    <span asp-validation-for="Email"
+                          class="validation-message">
+                    </span>
+
+                </div>
+
+
+                <!-- PASSWORD -->
+                <div class="form-group">
+
+                    <label asp-for="password">
+                        PASSWORD
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">
+                            🔒
+                        </span>
+
+                        <input asp-for="password"
+                               class="form-control"
+                               placeholder="Enter password" />
+
+                    </div>
+
+                    <span asp-validation-for="password"
+                          class="validation-message">
+                    </span>
+
+                </div>
+
+
+                <!-- CONFIRM PASSWORD -->
+                <div class="form-group">
+
+                    <label asp-for="confirmpassword">
+                        CONFIRM PASSWORD
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">
+                            🔐
+                        </span>
+
+                        <input asp-for="confirmpassword"
+                               class="form-control"
+                               placeholder="Confirm password" />
+
+                    </div>
+
+                    <span asp-validation-for="confirmpassword"
+                          class="validation-message">
+                    </span>
+
+                </div>
+
+
+                <!-- GENDER -->
+                <div class="form-group">
+
+                    <label asp-for="EmpGender">
+                        GENDER
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">
+                            ◈
+                        </span>
+
+                        <select asp-for="EmpGender"
+                                class="form-select">
+
+                            <option value="">
+                                -- Select Gender --
+                            </option>
+
+                            <option value="Male">
+                                Male
+                            </option>
+
+                            <option value="Female">
+                                Female
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <span asp-validation-for="EmpGender"
+                          class="validation-message">
+                    </span>
+
+                </div>
+
+
+                <!-- PROFILE IMAGE -->
+                <div class="form-group">
+
+                    <label asp-for="ImageUrl">
+                        PROFILE IMAGE
+                    </label>
+
+                    <div class="input-wrapper file-wrapper">
+
+                        <span class="input-icon">
+                            ▣
+                        </span>
+
+                        <input asp-for="ImageUrl"
+                               type="file"
+                               class="form-control file-input"
+                               accept="image/*" />
+
+                    </div>
+
+                    <span asp-validation-for="ImageUrl"
+                          class="validation-message">
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bottom Section -->
+            <div class="form-footer">
+
+                <div class="login-text">
+                    Already have an account?
+                    <a asp-controller="User"
+                       asp-action="Login">
+                        Login
+                    </a>
+                </div>
+
+                <button type="submit"
+                        class="register-btn">
+
+                    <span>✓</span>
+                    Register
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
 </div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

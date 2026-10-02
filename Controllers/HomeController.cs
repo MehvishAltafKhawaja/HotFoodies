@@ -1,6 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using ASPNETMVC.Models;
+using ASPNETMVC.Helpers;
+using ASPNETMVC.Helpers;
 
 namespace ASPNETMVC.Controllers;
 
@@ -52,10 +54,25 @@ public class HomeController : Controller
 
     public IActionResult FeedBack()
     {   
-        ViewData["Name"]= HttpContext.Session.GetString("Name");
         return View();
     }
+      public IActionResult SendMail(string to, string subject, string message)
+    {
+        EmailHelper helper = new EmailHelper();
 
+        bool result = helper.SendMail(to, subject, message);
+
+        if (result==true)
+        {
+            TempData["SuccessMessage"] = "Email sent successfully.";
+            return RedirectToAction ("Index", "Home");
+        }
+        else
+        {
+            TempData["ErrorMessage"] = "Email could not be sent.";
+            return RedirectToAction ("Index", "Home");
+        }
+    }
     public IActionResult Standard()
     {
         return View();

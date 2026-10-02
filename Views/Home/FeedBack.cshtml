@@ -11,28 +11,35 @@
     <div class="form-out">
 
 
-        <form class="fb-from" name="fr" method="post" asp-action="ShowFeedBackData" asp-controller="Admin">
+        <form class="fb-from" name="fr" method="post" asp-action="SendMail" asp-controller="Home">
 
             <div>
                 <label class="form-label">
-                    Username
+                    To
                 </label>
 
-                <input type="text"
-                       class="form-control"
-                       placeholder="Enter your name here!" name="username" />
+                <input type="email"
+                       class="form-control text-white"
+                       placeholder="Enter your email..." name="to" />
             </div>
 
             <div>
                 <label class="form-label">
-                    Message
+                    Subject
                 </label>
 
-                <textarea class="ta-fd"
+                <input class="form-control text-white"
+                          placeholder="Write your subject here..." name="subject" />
+            </div>
+            <div>
+                <label class="form-label">
+                    FeedBack
+                </label>
+
+                <textarea class="ta-fd text-white"
                           placeholder="Write your feedback here..." name="message"></textarea>
             </div>
-
-            <button type="submit" class="fb-btn">
+            <button type="submit" class="btn btn-success">
                 Submit Feedback
             </button>
 

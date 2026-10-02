@@ -452,3 +452,5 @@ D:\MVC .NET 2\obj\Debug\net10.0\compressed\rwppartec6-{0}-szwysdl6sj-szwysdl6sj.
 D:\MVC .NET 2\obj\Debug\net10.0\compressed\e95yks2xc6-{0}-hdp9nah1ku-hdp9nah1ku.gz
 D:\MVC .NET 2\obj\Debug\net10.0\compressed\9b62run63g-{0}-6qeh25s042-6qeh25s042.gz
 D:\MVC .NET 2\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\o56xjvwzqg-{0}-xmvmzwl466-xmvmzwl466.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\o3mg7jvjik-{0}-oznkesb66k-oznkesb66k.gz
