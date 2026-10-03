@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using ASPNETMVC.ViewModel;
 using ASPNETMVC.ViewModel;
 using Microsoft.CodeAnalysis.Elfie.Serialization;
+using ASPNETMVC.Helpers;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 namespace ASPNETMVC.Controllers
 {
     public class UserController : Controller
@@ -74,7 +76,10 @@ namespace ASPNETMVC.Controllers
             );
 
             if (res.Succeeded)
-            {
+            {   
+                EmailHelper emailHelper = new EmailHelper();
+                string msg = "Dear" + model.Name + "<br/><br/>You have successfully Register on our HotFoodies.</br><b>User Id / Email :<b>" + model.Name+ " or "+ model.Email + "<br/><b> Password  :<b>" + model.password + ".<br/><br/>Regrading <br/><font color='green' size='10px'> Hot-Foodies Officail</font> <br/>";
+                emailHelper.SendMail(model.Email, "Signup Completed Confirmation", msg);
                 return RedirectToAction("Login", "User");
             }
 
@@ -95,7 +100,7 @@ namespace ASPNETMVC.Controllers
 
            [HttpGet]
             public IActionResult Login()
-             {
+       {
                  return View();
              }
 
@@ -135,6 +140,16 @@ namespace ASPNETMVC.Controllers
                    ModelState.AddModelError("", "Invalid Email/Username or Password");
                    return View(model);
             }
+           
+           public async Task<IActionResult> Logout()
+        {
+            if(signInManager.IsSignedIn(User))
+            {
+                await signInManager.SignOutAsync();
+                return RedirectToAction("Login");
+            }
 
+            return NotFound();
+        }
     }
 } 

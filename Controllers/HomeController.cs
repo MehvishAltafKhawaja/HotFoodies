@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using ASPNETMVC.Models;
 using ASPNETMVC.Helpers;
 using ASPNETMVC.Helpers;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ASPNETMVC.Controllers;
 
@@ -34,28 +35,16 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult FirstPage()
-    {
-        TempData["Name"] = "Ubaid";
-        TempData["Message"] = "Welcome Sir!";
 
-        return RedirectToAction("SecondPgae");
-    }
-
-    public IActionResult SecondPgae()
-    {
-        return View();
-    }
-
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-
+   
+    
+    [Authorize]
     public IActionResult FeedBack()
     {   
         return View();
     }
+
+    [Authorize]
       public IActionResult SendMail(string to, string subject, string message)
     {
         EmailHelper helper = new EmailHelper();
@@ -73,29 +62,11 @@ public class HomeController : Controller
             return RedirectToAction ("Index", "Home");
         }
     }
-    public IActionResult Standard()
+     public IActionResult Privacy()
     {
         return View();
     }
-
-    [Route("Validation")]
-    public IActionResult Validation()
-    {    
-        
-        return View();
-    }
-
-    public IActionResult sessionform()
-    {
-        return View();
-    }
-    [HttpPost]
-      public IActionResult sessionform(string nm)
-    {   
-        HttpContext.Session.SetString("Name",nm);
-        ViewData["message"] = "Name Successfully added to session";
-        return View();
-    }
+    
   [ResponseCache(
     Duration = 0,
     Location = Microsoft.AspNetCore.Mvc.ResponseCacheLocation.None,

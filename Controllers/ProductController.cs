@@ -1,4 +1,5 @@
 using ASPNETMVC.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Razor.Language;
 using Microsoft.CodeAnalysis.Elfie.Serialization;
@@ -16,7 +17,7 @@ namespace ASPNETMVC.Controllers
             _logger=logger;
             this.context = context;
         } 
-        
+        [Authorize]
         public IActionResult CreateProduct()
         {
             return View();
@@ -39,7 +40,7 @@ namespace ASPNETMVC.Controllers
             }
             return View(Pdt);
         }
-
+        [Authorize]
         public IActionResult ProductList()
         {
             List<ProductTable> pdt = context.ProductTables.ToList();
@@ -68,7 +69,7 @@ namespace ASPNETMVC.Controllers
                 }
 
         }
-
+   [Authorize]
         public IActionResult Update(int? id)
         {
             if(id!= null)
@@ -93,6 +94,8 @@ namespace ASPNETMVC.Controllers
 
         }
 
+
+           [Authorize]
         [HttpPost]
         
         public IActionResult Update(ProductTable pt)
@@ -131,7 +134,7 @@ namespace ASPNETMVC.Controllers
             TempData["ErrorMessage"]="Please Enter Id!";
             return RedirectToAction("ProductList");
         }
-
+           [Authorize]
         [HttpPost]
         public IActionResult Delete(ProductTable Pt)
         { try{
