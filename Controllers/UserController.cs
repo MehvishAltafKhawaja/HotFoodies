@@ -142,14 +142,63 @@ namespace ASPNETMVC.Controllers
             }
            
            public async Task<IActionResult> Logout()
-        {
-            if(signInManager.IsSignedIn(User))
+           {
+              if(signInManager.IsSignedIn(User))
             {
                 await signInManager.SignOutAsync();
                 return RedirectToAction("Login");
             }
 
             return NotFound();
+            }
+
+            [HttpGet]
+public async Task<IActionResult> UpdatesPassword()
+{
+    if (!signInManager.IsSignedIn(User))
+    {
+        return RedirectToAction("Login");
+    }
+
+    var user = await userManager.GetUserAsync(User);
+
+    if (user == null)
+    {
+        return RedirectToAction("Login");
+    }
+
+    var model = new UpdatePassViewModel
+    {
+        Email = user.Email
+    };
+
+    return View(model);
+}
+
+[HttpPost]
+public async Task<IActionResult> UpdatesPassword(UpdatePassViewModel model)
+        {   
+            var user = await userManager.GetUserAsync(User);
+            if(ModelState.IsValid)
+            {
+                var result = await userManager.ChangePasswordAsync(user, model.CurrentPassword, model.NewPassword);
+                if (result.Succeeded)
+                {   
+                    TempData["SuccessMessage"]= "Password Updated!";
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                   TempData["ErrorMessage"]= "Server Error";
+                }
+            }
+
+            
+                return View(model);
+           
         }
+
+
+    
     }
 } 
