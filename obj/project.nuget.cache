@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WUH8SVQkWB0=",
+  "dgSpecHash": "gpAT2D4I9OE=",
   "success": true,
   "projectFilePath": "D:\\MVC .NET 2\\ASPNETMVC.csproj",
   "expectedPackageFiles": [
@@ -82,6 +82,7 @@
     "C:\\Users\\91700\\.nuget\\packages\\microsoft.entityframeworkcore.design\\10.0.12\\microsoft.entityframeworkcore.design.10.0.12.nupkg.sha512",
     "C:\\Users\\91700\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\10.0.12\\microsoft.entityframeworkcore.relational.10.0.12.nupkg.sha512",
     "C:\\Users\\91700\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\10.0.12\\microsoft.entityframeworkcore.sqlserver.10.0.12.nupkg.sha512",
+    "C:\\Users\\91700\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\10.0.12\\microsoft.entityframeworkcore.tools.10.0.12.nupkg.sha512",
     "C:\\Users\\91700\\.nuget\\packages\\microsoft.extensions.dependencymodel\\10.0.12\\microsoft.extensions.dependencymodel.10.0.12.nupkg.sha512",
     "C:\\Users\\91700\\.nuget\\packages\\microsoft.identity.client\\4.84.2\\microsoft.identity.client.4.84.2.nupkg.sha512",
     "C:\\Users\\91700\\.nuget\\packages\\microsoft.identity.client.broker\\4.84.2\\microsoft.identity.client.broker.4.84.2.nupkg.sha512",

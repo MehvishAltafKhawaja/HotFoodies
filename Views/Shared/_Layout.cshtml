@@ -27,154 +27,212 @@
          HEADER / NAVBAR
     ====================================== -->
 
-    <header class="main-header">
+<header class="main-header">
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid px-lg-5">
 
-        <nav class="navbar navbar-expand-lg custom-navbar">
+            <!-- BRAND -->
+            <a class="navbar-brand custom-brand"
+               asp-area=""
+               asp-controller="Home"
+               asp-action="Index">
+                <span class="brand-icon">H</span>
+                <span>
+                    Hot<span class="brand-green">Foodies</span>
+                </span>
+            </a>
 
-            <div class="container">
+            <!-- MOBILE TOGGLER -->
+            <button class="navbar-toggler custom-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <!-- LOGO -->
-                <a class="navbar-brand custom-brand"
-                   asp-area=""
-                   asp-controller="Home"
-                   asp-action="Index">
+            <!-- NAVIGATION -->
+            <div class="collapse navbar-collapse"
+                 id="mainNavbar">
 
-                    <span class="brand-icon">P</span>
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
 
-                    <span>
-                        Hot<span class="brand-green">Foodies</span>
-                    </span>
+                    <!-- HOME -->
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link"
+                           asp-area=""
+                           asp-controller="Home"
+                           asp-action="Index">
+                            Home
+                        </a>
+                    </li>
 
-                </a>
+                    <!-- ABOUT -->
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link"
+                           asp-area=""
+                           asp-controller="Home"
+                           asp-action="AboutUs">
+                            About
+                        </a>
+                    </li>
 
+                    <!-- PRODUCTS -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-nav-link"
+                           href="#"
+                           id="productDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Products
+                        </a>
 
-                <!-- MOBILE BUTTON -->
-                <button class="navbar-toggler custom-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#mainNavbar"
-                        aria-controls="mainNavbar"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
+                        <ul class="dropdown-menu custom-dropdown"
+                            aria-labelledby="productDropdown">
 
-                    <span class="navbar-toggler-icon"></span>
+                            <li>
+                                <a class="dropdown-item"
+                                   asp-area=""
+                                   asp-controller="ProductScaffold"
+                                   asp-action="Index">
+                                    View Products
+                                </a>
+                            </li>
 
-                </button>
+                            <li><hr class="dropdown-divider"></li>
 
+                            <li>
+                                <a class="dropdown-item"
+                                   asp-area=""
+                                   asp-controller="Product"
+                                   asp-action="CreateProduct">
+                                    + Add Product
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
 
-                <!-- NAVIGATION -->
-                <div class="collapse navbar-collapse"
-                     id="mainNavbar">
+                    <!-- EMPLOYEES -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-nav-link"
+                           href="#"
+                           id="employeeDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Employees
+                        </a>
 
-                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <ul class="dropdown-menu custom-dropdown"
+                            aria-labelledby="employeeDropdown">
 
-                        <!-- HOME -->
-                        <li class="nav-item">
+                            <li>
+                                <a class="dropdown-item"
+                                   asp-area=""
+                                   asp-controller="Employee"
+                                   asp-action="EmployeeList">
+                                    Employee List
+                                </a>
+                            </li>
 
-                            <a class="nav-link custom-nav-link"
-                               asp-area=""
-                               asp-controller="Home"
-                               asp-action="Index">
+                            <li><hr class="dropdown-divider"></li>
 
-                                Home
+                            <li>
+                                <a class="dropdown-item"
+                                   asp-area=""
+                                   asp-controller="Employee"
+                                   asp-action="EmployeeCreate">
+                                    + Create Employee
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
 
-                            </a>
+                    <!-- USERS -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-nav-link"
+                           href="#"
+                           id="userDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Users
+                        </a>
 
-                        </li>
+                        <ul class="dropdown-menu custom-dropdown"
+                            aria-labelledby="userDropdown">
 
-                        <!-- ABOUT -->
-                        <li class="nav-item">
+                            <li>
+                                <a class="dropdown-item"
+                                   asp-area=""
+                                   asp-controller="User"
+                                   asp-action="UserList">
+                                    User List
+                                </a>
+                            </li>
 
-                            <a class="nav-link custom-nav-link"
-                               asp-area=""
-                               asp-controller="Home"
-                               asp-action="AboutUs">
+                            <li><hr class="dropdown-divider"></li>
 
-                                About
+                            <li>
+                                <a class="dropdown-item"
+                                   asp-area=""
+                                   asp-controller="User"
+                                   asp-action="CreateUser">
+                                    + Add User
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
 
-                            </a>
+                    <!-- CONTACT / INFORMATION -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-nav-link"
+                           href="#"
+                           id="contactDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Contact
+                        </a>
 
-                        </li>
-                         <!-- Employee List -->
-                         <li class="nav-item">
+                        <ul class="dropdown-menu custom-dropdown"
+                            aria-labelledby="contactDropdown">
 
-                            <a class="nav-link custom-nav-link"
-                               asp-area=""
-                               asp-controller="Employee"
-                               asp-action="EmployeeList">
+                            <li>
+                                <a class="dropdown-item"
+                                   asp-area=""
+                                   asp-controller="Home"
+                                   asp-action="FeedBack">
+                                    Feedback
+                                </a>
+                            </li>
 
-                                Emp List
+                            <li>
+                                <a class="dropdown-item"
+                                   asp-area=""
+                                   asp-controller="Home"
+                                   asp-action="Privacy">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
 
-                            </a>
+                </ul>
 
-                        </li>
-                         <!-- Employee Create -->
-                         <li class="nav-item">
-
-                            <a class="nav-link custom-nav-link"
-                               asp-area=""
-                               asp-controller="Employee"
-                               asp-action="EmployeeCreate">
-
-                                + Create Emp 
-
-                            </a>
-
-                        </li>
-
-
-                        <!-- CREATE PRODUCT -->
-                        <li class="nav-item ms-lg-3">
-
-                            <a class="create-product-nav"
-                               asp-area=""
-                               asp-controller="Product"
-                               asp-action="CreateProduct">
-
-                                + Add Product
-
-                            </a>
-
-                        </li>
-                         <!-- CREATE USER -->
-                        <li class="nav-item ms-lg-3">
-
-                            <a class="create-product-nav"
-                               asp-area=""
-                               asp-controller="User"
-                               asp-action="CreateUser">
-
-                                + Add User
-
-                            </a>
-
-                        </li>
-                         <!-- PRODUCT List-->
-                        <li class="nav-item ms-lg-3">
-
-                            <a class="create-product-nav"
-                               asp-area=""
-                               asp-controller="User"
-                               asp-action="UserList">
-
-                                 User List
-
-                            </a>
-
-                        </li>
-
-                    </ul>
-                    <ul>
-                        <partial name="_UserPartial" />
-                    </ul>
-
-                </div>
+                <!-- ACCOUNT / LOGIN -->
+                <ul class="navbar-nav ms-lg-3 align-items-lg-center">
+                    <partial name="_UserPartial" />
+                </ul>
 
             </div>
+        </div>
+    </nav>
+</header>
 
-        </nav>
-
-    </header>
 
 
     <!-- =====================================

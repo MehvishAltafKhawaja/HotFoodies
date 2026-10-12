@@ -179,8 +179,6 @@ D:\MVC .NET 2\obj\Debug\net10.0\compressed\pr59ya3102-{0}-2z0ns9nrw6-2z0ns9nrw6.
 D:\MVC .NET 2\obj\Debug\net10.0\compressed\mpo6bg8ovy-{0}-muycvpuwrr-muycvpuwrr.gz
 D:\MVC .NET 2\obj\Debug\net10.0\compressed\9ah5ctmxxi-{0}-87fc7y1x7t-87fc7y1x7t.gz
 D:\MVC .NET 2\obj\Debug\net10.0\compressed\gtt9t9tc7z-{0}-mlv21k5csn-mlv21k5csn.gz
-D:\MVC .NET 2\obj\Debug\net10.0\compressed\tqpqoz09cm-{0}-n2778rc1n7-n2778rc1n7.gz
-D:\MVC .NET 2\obj\Debug\net10.0\compressed\pt0b89ajne-{0}-n2778rc1n7-n2778rc1n7.gz
 D:\MVC .NET 2\obj\Debug\net10.0\staticwebassets.build.json
 D:\MVC .NET 2\obj\Debug\net10.0\staticwebassets.build.json.cache
 D:\MVC .NET 2\obj\Debug\net10.0\staticwebassets.development.json
@@ -454,3 +452,8 @@ D:\MVC .NET 2\obj\Debug\net10.0\compressed\9b62run63g-{0}-6qeh25s042-6qeh25s042.
 D:\MVC .NET 2\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\MVC .NET 2\obj\Debug\net10.0\compressed\o56xjvwzqg-{0}-xmvmzwl466-xmvmzwl466.gz
 D:\MVC .NET 2\obj\Debug\net10.0\compressed\o3mg7jvjik-{0}-oznkesb66k-oznkesb66k.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\knmdnulpe9-{0}-p3eg85b7ux-p3eg85b7ux.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\n6w58767r6-{0}-06l9avaixz-06l9avaixz.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\vep8bmrnvi-{0}-rwcmv853x6-rwcmv853x6.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\tqpqoz09cm-{0}-7hjqqlmhtp-7hjqqlmhtp.gz
+D:\MVC .NET 2\obj\Debug\net10.0\compressed\pt0b89ajne-{0}-7hjqqlmhtp-7hjqqlmhtp.gz

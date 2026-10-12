@@ -2,16 +2,12 @@ using ASPNETMVC.Models;
 using ASPNETMVC.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using ASPNETMVC.CQRS.Command;
+using ASPNETMVC.CQRS.Query;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
-
-// Existing Product database
-builder.Services.AddDbContext<ProductDbContext>(options =>
-    options.UseSqlServer(
-        builder.Configuration.GetConnectionString("prodStr")
-    ));
 
 // AjaxDropDown database
 builder.Services.AddDbContext<AjaxDropDownContext>(options =>
@@ -26,6 +22,13 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(
         builder.Configuration.GetConnectionString("userStr")
     ));
+//ProductDatabase
+// User Database
+builder.Services.AddDbContext<ProductDbContext>(options =>
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("prodStr")
+    ));
+
 builder.Services.AddIdentity<Users, IdentityRole>(options =>
 {
     options.Password.RequiredLength = 8;
@@ -48,6 +51,11 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+builder.Services.AddScoped<CreateProductHandler>();
+
+builder.Services.AddScoped<GetAllProductQueryHandler>();
+
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())
